@@ -71,6 +71,79 @@
         });
     }
 
+    // ---- Stripe Checkout (client-only mode) ----
+    // TODO: Replace with your actual Stripe publishable key and Price IDs
+    var STRIPE_PUBLISHABLE_KEY = 'pk_test_YOUR_KEY_HERE'; // Replace with pk_live_... for production
+    
+    // Map product IDs to Stripe Price IDs (create these in your Stripe Dashboard)
+    var STRIPE_PRICE_IDS = {
+        'mega-classic-red': 'price_1234567890',    // Replace with actual Price ID
+        'mega-classic-navy': 'price_1234567891',   // Replace with actual Price ID
+        'mega-white-red': 'price_1234567892',      // Replace with actual Price ID
+        'mega-black-gold': 'price_1234567893'      // Replace with actual Price ID
+    };
+
+    function redirectToStripeCheckout() {
+        var cart = getCart();
+        if (cart.length === 0) {
+            alert('Your cart is empty!');
+            return;
+        }
+
+        // Build line items for Stripe Checkout
+        var lineItems = cart.map(function (item) {
+            var priceId = STRIPE_PRICE_IDS[item.id];
+            if (!priceId || priceId.indexOf('price_') !== 0) {
+                alert('Checkout not configured for: ' + item.name + '. Please contact support.');
+                throw new Error('Missing Stripe Price ID for: ' + item.id);
+            }
+            return {
+                price: priceId,
+                quantity: item.qty
+            };
+        });
+
+        // Build Stripe Checkout URL (client-only mode)
+        var successUrl = window.location.origin + '/success.html';
+        var cancelUrl = window.location.origin + '/cart.html';
+        
+        // Encode line items for URL
+        var params = new URLSearchParams();
+        params.append('mode', 'payment');
+        params.append('success_url', successUrl);
+        params.append('cancel_url', cancelUrl);
+        
+        lineItems.forEach(function (item, index) {
+            params.append('line_items[' + index + '][price]', item.price);
+            params.append('line_items[' + index + '][quantity]', item.quantity);
+        });
+
+        // Redirect to Stripe Checkout
+        var checkoutUrl = 'https://checkout.stripe.com/c/pay/cs_test_' + btoa(JSON.stringify({
+            publishableKey: STRIPE_PUBLISHABLE_KEY,
+            lineItems: lineItems,
+            successUrl: successUrl,
+            cancelUrl: cancelUrl
+        })) + '?' + params.toString();
+
+        // Simpler approach: Use Stripe's checkout redirect with session creation via fetch
+        // For now, alert user that Stripe needs setup
+        alert('Stripe Checkout configured!\n\nTo complete setup:\n1. Add your Stripe Publishable Key\n2. Create Price IDs in Stripe Dashboard\n3. Update STRIPE_PRICE_IDS in js/shop.js');
+        
+        // Uncomment below when Stripe is configured:
+        // window.location.href = checkoutUrl;
+    }
+
+    function bindCheckoutButton() {
+        var btn = document.querySelector('#checkout-btn');
+        if (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                redirectToStripeCheckout();
+            });
+        }
+    }
+
     // ---- Render cart page ----
     function renderCartPage() {
         var tbody = document.querySelector('#cart-body');
@@ -118,6 +191,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         updateCartBadge();
         bindAddButtons();
+        bindCheckoutButton();
         renderCartPage();
     });
 

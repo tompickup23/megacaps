@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful | MEGA Caps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .success-page {
+            text-align: center;
+            padding: 4rem 0;
+            min-height: 60vh;
+        }
+        .success-icon {
+            font-size: 4rem;
+            color: #22c55e;
+            margin-bottom: 1rem;
+        }
+        .success-page h1 {
+            color: var(--blue);
+            margin-bottom: 1rem;
+        }
+        .success-page p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-header__logo">MEGA</a>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="success-page">
+        <div class="container">
+            <div class="success-icon">&#10003;</div>
+            <h1>Payment Successful!</h1>
+            <p>Thank you for your order. You'll receive a confirmation email shortly.</p>
+            <a href="index.html" class="hero__cta">Continue Shopping</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 MEGA Caps &bull; megacaps.co.uk</p>
+        </div>
+    </footer>
+
+    <script src="js/shop.js"></script>
+    <script>
+        // Clear cart on successful payment
+        localStorage.removeItem('megacaps_cart');
+    </script>
+</body>
+</html>
