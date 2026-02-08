@@ -29,6 +29,7 @@ Update this file as you pick up / complete work.
 - [ ] SEO meta tags & Open Graph images
 - [ ] Analytics (Google Analytics / Plausible)
 - [ ] Additional product lines (hoodies, t-shirts, etc.)
+- [ ] Netlify deploy previews for PRs (gives live URLs for each branch)
 
 ---
 
