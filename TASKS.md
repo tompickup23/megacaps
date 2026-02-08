@@ -36,4 +36,19 @@ Update this file as you pick up / complete work.
 
 ---
 
+## Current Status — 2026-02-08
+
+**PR #4 is open:** https://github.com/tompickup23/megacaps/pull/4
+- Complete MVP with product grid, cart, checkout, about page, SEO, polished design
+- Supersedes PRs #1, #2, #3 (all closed)
+- Ready for Tom to review and merge
+
+**After PR #4 merges:**
+1. Tom adds product images (replace placeholders in index.html)
+2. Tom creates Stripe account → shares publishable key + Price IDs
+3. Greg activates Stripe (update js/shop.js with live keys)
+4. Set up custom domain DNS (megacaps.co.uk)
+
+**Branch:** `feature/polished-design-final` — contains all work
+
 *Last updated: 2026-02-08*
