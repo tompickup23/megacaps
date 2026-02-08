@@ -1,6 +1,6 @@
 # MEGA Caps — Task Board
 
-Shared task tracker for @tompickup23 and @gregjrothwell.
+Shared task tracker for @tompickup23, @gregjrothwell, and Claude.
 Update this file as you pick up / complete work.
 
 ## Status Key
@@ -22,13 +22,15 @@ Update this file as you pick up / complete work.
 - [x] **Social media links** (Greg)
 - [x] **Stripe Checkout integration (placeholder setup)** (Greg)
 - [x] **Polished styling** (Greg)
+- [x] **Technical SEO: robots.txt, sitemap.xml, JSON-LD structured data** (Claude)
+- [x] **404 error page for GitHub Pages** (Claude)
+- [x] **Analytics scaffold: Plausible snippet on all pages** (Claude)
+- [x] **Favicon + web app manifest** (Claude)
 - [ ] Source product images for caps (Tom)
 - [ ] Add real product descriptions & pricing
 - [ ] Activate Stripe (add live keys & Price IDs)
 - [ ] Set up custom domain megacaps.co.uk
-- [x] **Technical SEO: robots.txt, sitemap.xml, JSON-LD structured data** (Claude)
-- [x] **404 error page for GitHub Pages** (Claude)
-- [ ] Analytics (Google Analytics / Plausible)
+- [ ] Activate analytics (register megacaps.co.uk on plausible.io)
 
 ## Phase 2 — Growth
 
@@ -41,16 +43,22 @@ Update this file as you pick up / complete work.
 ## Current Status — 2026-02-08
 
 **PR #4 is open:** https://github.com/tompickup23/megacaps/pull/4
-- Complete MVP with product grid, cart, checkout, about page, SEO, polished design
+- Greg's complete MVP: product grid, cart, checkout, about page, SEO, polished design
 - Supersedes PRs #1, #2, #3 (all closed)
 - Ready for Tom to review and merge
 
-**After PR #4 merges:**
+**Claude's branch:** `claude/find-useful-prs-f0t5j`
+- Technical SEO infrastructure (robots.txt, sitemap.xml, JSON-LD structured data)
+- 404 error page for GitHub Pages
+- Plausible analytics snippet on all pages (needs domain activation to go live)
+- SVG favicon + web app manifest for browser tabs / mobile home screen
+- Based on Greg's `feature/polished-design-final` — merges cleanly after PR #4
+
+**After PR #4 + Claude's branch merge:**
 1. Tom adds product images (replace placeholders in index.html)
 2. Tom creates Stripe account → shares publishable key + Price IDs
 3. Greg activates Stripe (update js/shop.js with live keys)
-4. Set up custom domain DNS (megacaps.co.uk)
-
-**Branch:** `feature/polished-design-final` — contains all work
+4. Tom registers megacaps.co.uk on plausible.io (analytics go live automatically)
+5. Set up custom domain DNS (megacaps.co.uk)
 
 *Last updated: 2026-02-08*

@@ -22,10 +22,18 @@ See [TASKS.md](TASKS.md) for the shared task board.
 
 ```
 megacaps/
-├── index.html            # Current landing / coming-soon page
-├── css/style.css         # Shared brand stylesheet (colours, grid, components)
-├── js/shop.js            # Cart & shop interaction logic (skeleton)
-├── images/               # Product photos (to be added)
+├── index.html            # Shop homepage (product grid + JSON-LD structured data)
+├── cart.html             # Shopping cart (localStorage)
+├── about.html            # About & contact page
+├── success.html          # Post-payment confirmation
+├── 404.html              # Custom error page
+├── css/style.css         # Brand stylesheet (navy/red/gold palette, BEM, responsive)
+├── js/shop.js            # Cart logic, Stripe checkout scaffold
+├── images/               # Product photos (placeholders — to be replaced)
+│   └── favicon.svg       # Site favicon
+├── site.webmanifest      # Web app manifest
+├── robots.txt            # Search engine crawl rules
+├── sitemap.xml           # Page index for search engines
 ├── CONTRIBUTING.md       # How we work together
 ├── TASKS.md              # Shared task board
 ├── README.md             # This file
@@ -34,4 +42,4 @@ megacaps/
 
 ## Status
 
-Coming soon — collaboration structure is in place. Shop pages to be built once both collaborators have agreed on the plan.
+MVP built — product grid, cart, Stripe checkout scaffold, about page, SEO, analytics. Waiting on product images and Stripe activation. See [TASKS.md](TASKS.md) for details.
