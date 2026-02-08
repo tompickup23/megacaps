@@ -15,22 +15,25 @@ Update this file as you pick up / complete work.
 
 - [x] Landing page & GitHub Pages deploy
 - [x] Set up repo collaboration & project structure
+- [x] **Product grid with 4 placeholder products** (Greg)
+- [x] **Shopping cart with localStorage** (Greg)
+- [x] **About / Contact page** (Greg)
+- [x] **SEO meta tags & Open Graph** (Greg)
+- [x] **Social media links** (Greg)
+- [x] **Stripe Checkout integration (placeholder setup)** (Greg)
+- [x] **Polished styling** (Greg)
 - [ ] Source product images for caps (Tom)
 - [ ] Add real product descriptions & pricing
-- [ ] Integrate payment (Stripe / PayPal / link to checkout)
+- [ ] Activate Stripe (add live keys & Price IDs)
 - [ ] Set up custom domain megacaps.co.uk
-- [ ] Add contact / about page
-- [ ] Mobile testing & polish
+- [ ] Analytics (Google Analytics / Plausible)
 
 ## Phase 2 — Growth
 
 - [ ] Email signup / notify list
-- [ ] Social media links & sharing
-- [ ] SEO meta tags & Open Graph images
-- [ ] Analytics (Google Analytics / Plausible)
 - [ ] Additional product lines (hoodies, t-shirts, etc.)
 - [ ] Netlify deploy previews for PRs (gives live URLs for each branch)
 
 ---
 
-*Last updated: 2026-02-07*
+*Last updated: 2026-02-08*
