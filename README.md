@@ -13,7 +13,7 @@ Niche merchandise for the UK market. Dropship and white-label options available.
 
 ## Collaboration
 
-Managed by **@tompickup23** and **@gregjrothwell**.
+Managed by **@tompickup23**, **@gregjrothwell**, and **Claude** (AI dev).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for workflow, branch conventions, and coding standards.
 See [TASKS.md](TASKS.md) for the shared task board.
@@ -36,6 +36,7 @@ megacaps/
 ├── sitemap.xml           # Page index for search engines
 ├── CONTRIBUTING.md       # How we work together
 ├── TASKS.md              # Shared task board
+├── LOGO-PROMPTS.md       # 50 AI logo design prompts
 ├── README.md             # This file
 └── .github/workflows/    # GitHub Pages deploy
 ```

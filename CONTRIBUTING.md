@@ -36,6 +36,7 @@ megacaps/
 ├── sitemap.xml         # Page index for search engines
 ├── CONTRIBUTING.md     # This file
 ├── TASKS.md            # Shared task board
+├── LOGO-PROMPTS.md     # 50 AI logo design prompts
 ├── README.md           # Project overview
 └── .github/
     └── workflows/
