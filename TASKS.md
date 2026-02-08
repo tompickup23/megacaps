@@ -26,6 +26,8 @@ Update this file as you pick up / complete work.
 - [ ] Add real product descriptions & pricing
 - [ ] Activate Stripe (add live keys & Price IDs)
 - [ ] Set up custom domain megacaps.co.uk
+- [x] **Technical SEO: robots.txt, sitemap.xml, JSON-LD structured data** (Claude)
+- [x] **404 error page for GitHub Pages** (Claude)
 - [ ] Analytics (Google Analytics / Plausible)
 
 ## Phase 2 — Growth

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://megacaps.co.uk/sitemap.xml
