@@ -26,15 +26,16 @@ Update this file as you pick up / complete work.
 - [x] **404 error page for GitHub Pages** (Claude)
 - [x] **Analytics scaffold: Plausible snippet on all pages** (Claude)
 - [x] **Favicon + web app manifest** (Claude)
+- [x] **Email signup / notify list** (Claude)
 - [ ] Source product images for caps (Tom)
 - [ ] Add real product descriptions & pricing
 - [ ] Activate Stripe (add live keys & Price IDs)
 - [ ] Set up custom domain megacaps.co.uk
 - [ ] Activate analytics (register megacaps.co.uk on plausible.io)
+- [ ] Activate email capture (create Formspree form, update form ID in index.html)
 
 ## Phase 2 — Growth
 
-- [ ] Email signup / notify list
 - [ ] Additional product lines (hoodies, t-shirts, etc.)
 - [ ] Netlify deploy previews for PRs (gives live URLs for each branch)
 

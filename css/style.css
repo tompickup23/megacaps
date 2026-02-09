@@ -571,6 +571,81 @@ img {
     color: var(--white);
 }
 
+/* ---- Email Signup ---- */
+.email-signup {
+    background: var(--blue);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+    border-top: 3px solid var(--gold);
+}
+
+.email-signup__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.email-signup__text {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.email-signup__form {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-signup__input {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem 1.25rem;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--font);
+    transition: border-color 0.2s;
+}
+
+.email-signup__input:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.email-signup__btn {
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.email-signup__btn:hover {
+    background: #A00D24;
+}
+
+.email-signup__btn:active {
+    transform: translateY(1px);
+}
+
+.email-signup__privacy {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    margin-top: 1rem;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
     .site-header .container {
