@@ -1,0 +1,15 @@
+{
+  "name": "MEGA Caps",
+  "short_name": "MEGA",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "theme_color": "#0A1628",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}

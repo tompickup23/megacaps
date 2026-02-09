@@ -6,6 +6,7 @@
 |-----|--------|------|
 | Tom Pickup | @tompickup23 | Owner / Product |
 | Greg Rothwell | @gregjrothwell | Collaborator / Dev |
+| Claude | — | AI Dev (SEO, infrastructure, analytics) |
 
 ## Workflow
 
@@ -19,16 +20,23 @@
 
 ```
 megacaps/
-├── index.html          # Shop homepage (product grid)
-├── product.html        # Product detail page template
+├── index.html          # Shop homepage (product grid + JSON-LD)
 ├── cart.html           # Shopping cart
+├── about.html          # About & contact page
+├── success.html        # Post-payment confirmation
+├── 404.html            # Custom error page (GitHub Pages)
 ├── css/
 │   └── style.css       # Shared styles & branding
 ├── js/
 │   └── shop.js         # Cart logic & interactions
 ├── images/             # Product photos & assets
+│   └── favicon.svg     # Site favicon
+├── site.webmanifest    # Web app manifest (favicon, theme)
+├── robots.txt          # Search engine crawl rules
+├── sitemap.xml         # Page index for search engines
 ├── CONTRIBUTING.md     # This file
 ├── TASKS.md            # Shared task board
+├── LOGO-PROMPTS.md     # 50 AI logo design prompts
 ├── README.md           # Project overview
 └── .github/
     └── workflows/

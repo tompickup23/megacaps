@@ -3,31 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Successful | MEGA Caps</title>
+    <title>Page Not Found | MEGA Caps</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <script defer data-domain="megacaps.co.uk" src="https://plausible.io/js/script.js"></script>
-    <style>
-        .success-page {
-            text-align: center;
-            padding: 4rem 0;
-            min-height: 60vh;
-        }
-        .success-icon {
-            font-size: 4rem;
-            color: #22c55e;
-            margin-bottom: 1rem;
-        }
-        .success-page h1 {
-            color: var(--blue);
-            margin-bottom: 1rem;
-        }
-        .success-page p {
-            color: var(--text-light);
-            margin-bottom: 2rem;
-        }
-    </style>
 </head>
 <body>
     <header class="site-header">
@@ -36,8 +16,8 @@
             <nav>
                 <ul class="site-nav">
                     <li><a href="index.html">Shop</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span class="cart-count" style="display:none">0</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -45,23 +25,24 @@
 
     <section class="success-page">
         <div class="container">
-            <div class="success-icon">&#10003;</div>
-            <h1>Payment Successful!</h1>
-            <p>Thank you for your order. You'll receive a confirmation email shortly.</p>
-            <a href="index.html" class="hero__cta">Continue Shopping</a>
+            <div class="success-icon">404</div>
+            <h1>Page Not Found</h1>
+            <p>The page you're looking for doesn't exist or has been moved.</p>
+            <a href="index.html" class="hero__cta">Back to Shop</a>
         </div>
     </section>
 
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 MEGA Caps &bull; megacaps.co.uk</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+                <a href="about.html">About</a> &bull;
+                <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a> &bull;
+                <a href="https://x.com/megacaps" target="_blank" rel="noopener">X</a>
+            </p>
         </div>
     </footer>
 
     <script src="js/shop.js"></script>
-    <script>
-        // Clear cart on successful payment
-        localStorage.removeItem('megacaps_cart');
-    </script>
 </body>
 </html>
