@@ -12,14 +12,14 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="site-header">
+    <header class="site-header" id="siteHeader">
         <div class="container">
             <a href="index.html" class="site-header__logo">MEGA</a>
             <nav>
                 <ul class="site-nav">
                     <li><a href="index.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="cart.html">Cart <span class="cart-count" style="display:none">0</span></a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span class="cart-count" style="display:none">0</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -31,44 +31,46 @@
             <h1 class="products__heading">About MEGA Caps</h1>
             
             <div class="about-content">
-                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
-                    <strong>MEGA Caps</strong> stands for something simple: pride in who we are and where we come from.
-                </p>
+                <p><strong>MEGA Caps</strong> stands for something simple: pride in who we are and where we come from.</p>
                 
-                <p style="margin-bottom: 1.5rem;">
+                <p>
                     Founded in 2026 by two friends who believe England deserves better than the status quo, 
                     we create premium quality caps for those who aren't afraid to wear their beliefs on their head.
                 </p>
                 
-                <p style="margin-bottom: 1.5rem;">
-                    Every cap is designed with one goal: to look sharp, feel comfortable, and start conversations. 
-                    Whether you're at the pub, the match, or marching for what matters — MEGA has you covered.
+                <div class="pull-quote">
+                    "Every cap is designed with one goal: to look sharp, feel comfortable, and start conversations."
+                </div>
+
+                <p>
+                    Whether you're at the pub, the match, or marching for what matters — MEGA has you covered. 
+                    We refuse to apologize for bold statements. We refuse to blend in. We refuse to be quiet.
                 </p>
 
-                <h2 style="color: var(--blue); margin: 2rem 0 1rem;">What We Believe</h2>
-                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                <h2>What We Believe</h2>
+                <ul>
                     <li>Quality over quantity — buy once, wear forever</li>
                     <li>Bold statements, not half-measures</li>
                     <li>Made for England, worn with pride</li>
                     <li>Dropship and white-label available for partners</li>
                 </ul>
 
-                <h2 style="color: var(--blue); margin: 2rem 0 1rem;">Contact Us</h2>
+                <h2>Get in Touch</h2>
                 <p style="margin-bottom: 0.5rem;">
                     <strong>Email:</strong> <a href="mailto:hello@megacaps.co.uk">hello@megacaps.co.uk</a>
                 </p>
                 <p style="margin-bottom: 0.5rem;">
                     <strong>Business enquiries:</strong> <a href="mailto:partners@megacaps.co.uk">partners@megacaps.co.uk</a>
                 </p>
-                <p style="margin-bottom: 1.5rem;">
+                <p>
                     <strong>Response time:</strong> We typically reply within 24 hours.
                 </p>
 
-                <h2 style="color: var(--blue); margin: 2rem 0 1rem;">Follow Us</h2>
+                <h2>Follow the Movement</h2>
                 <p>
-                    <a href="https://instagram.com/megacaps" target="_blank" rel="noopener" style="margin-right: 1rem;">Instagram</a>
-                    <a href="https://x.com/megacaps" target="_blank" rel="noopener" style="margin-right: 1rem;">X / Twitter</a>
-                    <a href="https://tiktok.com/@megacaps" target="_blank" rel="noopener">TikTok</a>
+                    <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://x.com/megacaps" target="_blank" rel="noopener" style="margin-left: 1rem;">X / Twitter</a>
+                    <a href="https://tiktok.com/@megacaps" target="_blank" rel="noopener" style="margin-left: 1rem;">TikTok</a>
                 </p>
             </div>
         </div>
@@ -77,17 +79,22 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 MEGA Caps &bull; megacaps.co.uk</p>
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">
-                <a href="faq.html">FAQ</a> &bull;
-                <a href="terms.html">Terms</a> &bull;
-                <a href="privacy.html">Privacy</a> &bull;
-                <a href="returns.html">Returns</a> &bull;
-                <a href="press.html">Press Kit</a> &bull;
-                <a href="about.html">About</a> &bull;
-                <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a> &bull;
+            <div class="site-footer__logo">MEGA</div>
+            <nav class="site-footer__links">
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a href="press.html">Press Kit</a>
+                <a href="returns.html">Returns</a>
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+            <nav class="site-footer__social">
+                <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://x.com/megacaps" target="_blank" rel="noopener">X</a>
-            </p>
+            </nav>
+            <div class="site-footer__copyright">
+                &copy; 2026 MEGA Caps &bull; megacaps.co.uk
+            </div>
         </div>
     </footer>
 

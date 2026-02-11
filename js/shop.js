@@ -187,13 +187,61 @@
         });
     }
 
+    // ---- Scroll behavior for header ----
+    function handleHeaderScroll() {
+        var header = document.getElementById('siteHeader');
+        if (!header) return;
+        
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+
+    // ---- Size Guide Modal ----
+    function bindSizeGuideModal() {
+        var modal = document.getElementById('sizeGuideModal');
+        if (!modal) return;
+
+        var openButtons = document.querySelectorAll('.open-size-guide');
+        var closeButton = document.querySelector('.modal-close');
+
+        openButtons.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        if (closeButton) {
+            closeButton.addEventListener('click', function () {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        }
+
+        // Close on background click
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+
     // ---- Init ----
     document.addEventListener('DOMContentLoaded', function () {
         updateCartBadge();
         bindAddButtons();
         bindCheckoutButton();
         renderCartPage();
+        bindSizeGuideModal();
     });
+
+    // Scroll event listener
+    window.addEventListener('scroll', handleHeaderScroll);
 
     // Expose for inline use if needed
     window.MegaCart = { addToCart: addToCart, getCart: getCart, removeFromCart: removeFromCart };

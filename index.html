@@ -100,7 +100,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="site-header">
+    <header class="site-header" id="siteHeader">
         <div class="container">
             <a href="index.html" class="site-header__logo">MEGA</a>
             <nav>
@@ -114,28 +114,33 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" id="heroSection">
         <div class="container">
             <h1 class="hero__title">Make England Great Again</h1>
             <p class="hero__subtitle">Premium quality caps. Bold statements. British made.</p>
             <a href="#products" class="hero__cta">Shop Now</a>
         </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
     </section>
 
     <!-- Products -->
-    <section class="products" id="products">
+    <section class="products bg-light" id="products">
         <div class="container">
-            <h2 class="products__heading">Our Caps</h2>
+            <h2 class="products__heading">Our Collection</h2>
             <div class="product-grid">
                 <!-- Product 1 -->
                 <div class="product-card">
-                    <div class="product-card__image-placeholder">MEGA</div>
+                    <div class="product-card__image-placeholder"></div>
                     <div class="product-card__body">
                         <h3 class="product-card__title">MEGA Classic Red</h3>
                         <p class="product-card__desc">The original. Bold red canvas with crisp white embroidery that doesn't whisper — it speaks.</p>
                         <p class="product-card__price">&pound;24.99</p>
-                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
-                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        <div class="product-card__actions">
+                            <a href="javascript:void(0)" class="open-size-guide">Size Guide</a>
                         </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
@@ -147,13 +152,13 @@
 
                 <!-- Product 2 -->
                 <div class="product-card">
-                    <div class="product-card__image-placeholder" style="background:var(--blue);color:white">MEGA</div>
+                    <div class="product-card__image-placeholder" style="background: var(--blue); color: white;"></div>
                     <div class="product-card__body">
                         <h3 class="product-card__title">MEGA Classic Navy</h3>
                         <p class="product-card__desc">Understated power. Deep navy canvas for those who let their actions do the talking.</p>
                         <p class="product-card__price">&pound;24.99</p>
-                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
-                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        <div class="product-card__actions">
+                            <a href="javascript:void(0)" class="open-size-guide">Size Guide</a>
                         </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
@@ -165,13 +170,13 @@
 
                 <!-- Product 3 -->
                 <div class="product-card">
-                    <div class="product-card__image-placeholder" style="background:var(--white);color:var(--red);border:2px solid var(--red)">MEGA</div>
+                    <div class="product-card__image-placeholder" style="background: var(--white); color: var(--red); border: 2px solid var(--red);"></div>
                     <div class="product-card__body">
                         <h3 class="product-card__title">MEGA White &amp; Red</h3>
                         <p class="product-card__desc">The flagbearer. Clean white canvas with St George's Cross inspiration — pure, bold, unmistakable.</p>
                         <p class="product-card__price">&pound;26.99</p>
-                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
-                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        <div class="product-card__actions">
+                            <a href="javascript:void(0)" class="open-size-guide">Size Guide</a>
                         </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
@@ -183,13 +188,13 @@
 
                 <!-- Product 4 -->
                 <div class="product-card">
-                    <div class="product-card__image-placeholder" style="background:#111;color:var(--gold)">MEGA</div>
+                    <div class="product-card__image-placeholder" style="background: #111; color: var(--gold);"></div>
                     <div class="product-card__body">
                         <h3 class="product-card__title">MEGA Black &amp; Gold</h3>
                         <p class="product-card__desc">The premium edition. Black velvet touch with gold crown detailing — for those who wear victory.</p>
                         <p class="product-card__price">&pound;29.99</p>
-                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
-                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        <div class="product-card__actions">
+                            <a href="javascript:void(0)" class="open-size-guide">Size Guide</a>
                         </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
@@ -201,9 +206,8 @@
 
                 <!-- Coming Soon: MEGA Camo Edition -->
                 <div class="product-card coming-soon">
-                    <div class="product-card__image-placeholder" style="background:#667A5C;color:#FFFFFF;position:relative;">
+                    <div class="product-card__image-placeholder" style="background: #667A5C; color: #FFFFFF; position: relative;">
                         <span class="coming-soon-badge">Coming Soon</span>
-                        MEGA
                     </div>
                     <div class="product-card__body">
                         <h3 class="product-card__title">MEGA Camo Edition</h3>
@@ -215,9 +219,8 @@
 
                 <!-- Coming Soon: MEGA Union Jack -->
                 <div class="product-card coming-soon">
-                    <div class="product-card__image-placeholder" style="background:var(--red);color:var(--white);position:relative;">
+                    <div class="product-card__image-placeholder" style="background: var(--red); color: var(--white); position: relative;">
                         <span class="coming-soon-badge">Coming Soon</span>
-                        MEGA
                     </div>
                     <div class="product-card__body">
                         <h3 class="product-card__title">MEGA Union Jack</h3>
@@ -231,10 +234,10 @@
     </section>
 
     <!-- About -->
-    <section class="products" id="about" style="background:var(--light-grey)">
+    <section class="products bg-light" id="about">
         <div class="container">
             <h2 class="products__heading">Why MEGA?</h2>
-            <p style="text-align:center;max-width:600px;margin:0 auto;color:var(--text-light)">
+            <p style="text-align: center; max-width: 600px; margin: 0 auto; color: var(--text-light);">
                 Premium quality caps for those who aren't afraid to stand out. 
                 Designed in England, worn with pride. Available for dropship and white-label.
             </p>
@@ -320,17 +323,22 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 MEGA Caps &bull; megacaps.co.uk</p>
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">
-                <a href="faq.html">FAQ</a> &bull;
-                <a href="terms.html">Terms</a> &bull;
-                <a href="privacy.html">Privacy</a> &bull;
-                <a href="returns.html">Returns</a> &bull;
-                <a href="press.html">Press Kit</a> &bull;
-                <a href="about.html">About</a> &bull;
-                <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a> &bull;
+            <div class="site-footer__logo">MEGA</div>
+            <nav class="site-footer__links">
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a href="press.html">Press Kit</a>
+                <a href="returns.html">Returns</a>
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+            <nav class="site-footer__social">
+                <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://x.com/megacaps" target="_blank" rel="noopener">X</a>
-            </p>
+            </nav>
+            <div class="site-footer__copyright">
+                &copy; 2026 MEGA Caps &bull; megacaps.co.uk
+            </div>
         </div>
     </footer>
 
