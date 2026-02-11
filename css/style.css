@@ -331,6 +331,13 @@ img {
     color: var(--blue);
 }
 
+.product-card__desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
 .product-card__price {
     font-size: 1.4rem;
     font-weight: 800;

@@ -1,0 +1,32 @@
+# Canva Magic Media Prompts for MEGA Caps
+
+In Canva: Create a Design > Custom 1024x1024 > Apps > Magic Media
+
+
+## MEGA Classic Red
+Prompt:
+Professional product photography of a premium red baseball cap with bold white 'MEGA' embroidered text on the front. Structured 6-panel cotton twill cap, adjustable snapback closure. Clean white background, studio lighting, front-facing angle, high-end ecommerce style. 4K, photorealistic, sharp focus.
+Style: Photo
+Aspect Ratio: 1:1
+----------------------------------------
+
+## MEGA Classic Navy
+Prompt:
+Professional product photography of a premium navy blue baseball cap with gold metallic 'MEGA' embroidered text on the front. Rich navy cotton twill, antique brass hardware on adjustable strap. Clean white background, studio lighting, front-facing angle, high-end ecommerce style. 4K, photorealistic.
+Style: Photo
+Aspect Ratio: 1:1
+----------------------------------------
+
+## MEGA White & Red
+Prompt:
+Professional product photography of a premium white baseball cap with bold red 'MEGA' embroidered text and red contrast stitching. Clean white canvas with St George's Cross inspired red accents. White background, studio lighting, front-facing angle, high-end ecommerce style. 4K, photorealistic.
+Style: Photo
+Aspect Ratio: 1:1
+----------------------------------------
+
+## MEGA Black & Gold
+Prompt:
+Professional product photography of a premium black baseball cap with gold metallic 'MEGA' embroidered text and small crown detail. Faux-suede finish, leather-style strap with gold buckle. Clean white background, studio lighting, front-facing angle, luxury product photography style. 4K, photorealistic.
+Style: Photo
+Aspect Ratio: 1:1
+----------------------------------------

@@ -1,0 +1,36 @@
+# Midjourney Prompts for MEGA Caps
+
+Copy these into Midjourney Discord:
+
+
+## MEGA Classic Red
+```
+Professional product photography of a premium red baseball cap with bold white 'MEGA' embroidered text on the front. Structured 6-panel cotton twill cap, adjustable snapback closure. Clean white background, studio lighting, front-facing angle, high-end ecommerce style. 4K, photorealistic, sharp focus. --ar 1:1 --v 6.1 --style raw
+```
+Variations:
+  - Red baseball cap with white 'MEGA' embroidery, studio shot, white background --ar 1:1
+  - Premium red cap front view, bold white text, product photography --ar 1:1
+
+## MEGA Classic Navy
+```
+Professional product photography of a premium navy blue baseball cap with gold metallic 'MEGA' embroidered text on the front. Rich navy cotton twill, antique brass hardware on adjustable strap. Clean white background, studio lighting, front-facing angle, high-end ecommerce style. 4K, photorealistic. --ar 1:1 --v 6.1 --style raw
+```
+Variations:
+  - Navy blue baseball cap with gold 'MEGA' embroidery, studio shot --ar 1:1
+  - Dark blue premium cap front view, metallic gold text, product photography --ar 1:1
+
+## MEGA White & Red
+```
+Professional product photography of a premium white baseball cap with bold red 'MEGA' embroidered text and red contrast stitching. Clean white canvas with St George's Cross inspired red accents. White background, studio lighting, front-facing angle, high-end ecommerce style. 4K, photorealistic. --ar 1:1 --v 6.1 --style raw
+```
+Variations:
+  - White baseball cap with red 'MEGA' embroidery, studio shot --ar 1:1
+  - Clean white cap with red text and cross details, product photography --ar 1:1
+
+## MEGA Black & Gold
+```
+Professional product photography of a premium black baseball cap with gold metallic 'MEGA' embroidered text and small crown detail. Faux-suede finish, leather-style strap with gold buckle. Clean white background, studio lighting, front-facing angle, luxury product photography style. 4K, photorealistic. --ar 1:1 --v 6.1 --style raw
+```
+Variations:
+  - Black suede baseball cap with gold 'MEGA' embroidery, studio shot --ar 1:1
+  - Luxury black cap with gold text and crown detail, product photography --ar 1:1
