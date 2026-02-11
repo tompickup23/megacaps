@@ -653,6 +653,383 @@ img {
     margin-top: 1rem;
 }
 
+/* ---- Page Header (for FAQ, Legal, Press Pages) ---- */
+.page-header {
+    background: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 0 3rem;
+    border-bottom: 3px solid var(--gold);
+}
+
+.page-header__title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.page-header__subtitle {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 0;
+}
+
+/* ---- FAQ Section ---- */
+.faq-section {
+    padding: var(--section-padding) 0;
+    background: var(--off-white);
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    margin-bottom: 3rem;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--gold);
+}
+
+.faq-category__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--blue);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.faq-item {
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 1.25rem;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-item__toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.faq-item__toggle:hover {
+    opacity: 0.8;
+}
+
+.faq-item__question {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+    flex: 1;
+    transition: color 0.2s;
+}
+
+.faq-item__toggle:hover .faq-item__question {
+    color: var(--red);
+}
+
+.faq-item__icon {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+    font-weight: 700;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+.faq-item__toggle[aria-expanded="true"] .faq-item__icon {
+    transform: rotate(45deg);
+}
+
+.faq-item__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.faq-item__toggle[aria-expanded="true"] ~ .faq-item__answer {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.faq-item__answer p {
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.faq-item__answer p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---- Legal Section ---- */
+.legal-section {
+    padding: var(--section-padding) 0;
+    background: var(--white);
+}
+
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.legal-content h2 {
+    color: var(--blue);
+    margin: 2.5rem 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 4px solid var(--gold);
+    padding-left: 1rem;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.legal-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.legal-content li {
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.legal-content a {
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.legal-content a:hover {
+    color: var(--gold);
+}
+
+/* ---- Press Section ---- */
+.press-section {
+    padding: var(--section-padding) 0;
+    background: var(--white);
+}
+
+.press-module {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--light-grey);
+}
+
+.press-module:last-child {
+    border-bottom: none;
+}
+
+.press-module h2 {
+    color: var(--blue);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.press-module h3 {
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.press-module p {
+    margin-bottom: 1rem;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.press-module ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.press-module li {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.press-module a {
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.press-module a:hover {
+    color: var(--gold);
+}
+
+/* ---- Size Guide Modal ---- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1rem;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-light);
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: var(--red);
+}
+
+.size-guide-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.size-guide-table thead {
+    background: var(--off-white);
+    border-bottom: 2px solid var(--gold);
+}
+
+.size-guide-table th {
+    padding: 0.75rem;
+    text-align: left;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.size-guide-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--light-grey);
+    color: var(--text);
+}
+
+.size-guide-table tbody tr:hover {
+    background: var(--off-white);
+}
+
+/* ---- Product Card Modifications (Coming Soon) ---- */
+.product-card.coming-soon {
+    opacity: 0.85;
+}
+
+.product-card.coming-soon .product-card__image-placeholder {
+    background: var(--light-grey);
+    position: relative;
+}
+
+.coming-soon-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gold);
+    color: var(--blue);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.product-card.coming-soon .product-card__btn {
+    background: var(--gold);
+    color: var(--blue);
+}
+
+.product-card.coming-soon .product-card__btn:hover {
+    background: var(--white);
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
     .site-header .container {
@@ -691,6 +1068,23 @@ img {
     .cart__total {
         text-align: center;
     }
+
+    .page-header__title {
+        font-size: 1.8rem;
+    }
+
+    .faq-category {
+        padding: 1.5rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .legal-content h2,
+    .press-module h2 {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -701,5 +1095,22 @@ img {
     
     .product-grid {
         grid-template-columns: 1fr;
+    }
+
+    .page-header__title {
+        font-size: 1.5rem;
+    }
+
+    .faq-item__question {
+        font-size: 1rem;
+    }
+
+    .size-guide-table {
+        font-size: 0.9rem;
+    }
+
+    .size-guide-table th,
+    .size-guide-table td {
+        padding: 0.5rem;
     }
 }

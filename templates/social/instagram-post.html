@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post Template — MEGA Caps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', Arial, sans-serif; background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 1rem; }
+        .post-container { width: 1080px; height: 1080px; background: linear-gradient(135deg, #0A1628 0%, #1A3244 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        
+        /* Background accent */
+        .post-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(200, 16, 46, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .post-container::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(201, 162, 39, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 4rem 2rem;
+            max-width: 900px;
+        }
+
+        .product-placeholder {
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px solid #C9A227;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 150px;
+            color: #C8102E;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .product-placeholder::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: #C8102E;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #FFFFFF;
+            font-weight: 900;
+        }
+
+        .text-content h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 0.5rem;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #C9A227;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-content p {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .cta-text {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #C8102E;
+            margin-top: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Variations below for different post types */
+        .variant-product .text-content { position: absolute; bottom: 2rem; left: 0; right: 0; width: 100%; text-align: center; }
+        .variant-product .product-placeholder { margin-bottom: 0; width: 400px; height: 400px; font-size: 100px; }
+        
+        .variant-story .content { padding: 2rem; justify-content: space-between; }
+        .variant-story .text-content h1 { font-size: 3rem; }
+
+        /* Footer badge */
+        .footer-badge {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            color: #C9A227;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Print styles for canvas export */
+        @media print {
+            body { background: none; padding: 0; }
+            .post-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- TEMPLATE: Product Launch Post -->
+    <div class="post-container">
+        <div class="product-placeholder">MEGA</div>
+        <div class="content">
+            <div class="text-content">
+                <h1>New Release</h1>
+                <h2>MEGA {{PRODUCT_NAME}}</h2>
+                <p>Premium quality. Bold statement.<br>Now available.</p>
+                <div class="cta-text">🛒 Link in bio</div>
+            </div>
+        </div>
+        <div class="footer-badge">megacaps.co.uk</div>
+    </div>
+
+    <!-- TEMPLATE: Lifestyle Post -->
+    <div class="post-container" style="display: none;">
+        <div class="content">
+            <div class="text-content">
+                <h1>Own Your Style</h1>
+                <p>MEGA Caps for people who don't do ordinary.</p>
+                <p style="font-size: 1.2rem; margin-top: 3rem; color: #C9A227; font-weight: 600;">Shop the collection</p>
+            </div>
+        </div>
+        <div class="footer-badge">megacaps.co.uk</div>
+    </div>
+
+    <!-- TEMPLATE: Flash Sale Post -->
+    <div class="post-container" style="display: none; background: linear-gradient(135deg, #C8102E 0%, #A00D24 100%);">
+        <div class="content">
+            <div class="text-content">
+                <h1 style="font-size: 5rem;">LIMITED TIME</h1>
+                <h2 style="color: #FFFFFF; font-size: 3.5rem;">{{DISCOUNT}}% OFF</h2>
+                <p style="font-size: 2rem; margin-top: 2rem;">On All Caps</p>
+                <div class="cta-text" style="color: #FFFFFF;">Ends {{DATE}}</div>
+            </div>
+        </div>
+        <div class="footer-badge">Shop now → link in bio</div>
+    </div>
+
+    <!-- TEMPLATE: Community Post -->
+    <div class="post-container" style="display: none;">
+        <div class="content">
+            <div class="text-content">
+                <h2 style="font-size: 3.5rem; margin-bottom: 1rem;">Spot a MEGA?</h2>
+                <p style="font-size: 1.8rem;">Tag us with #MEGACaps for a chance to be featured.</p>
+                <p style="margin-top: 2rem; font-size: 1.3rem; color: #C9A227;">Show us your style 🧢</p>
+            </div>
+        </div>
+        <div class="footer-badge">@megacaps</div>
+    </div>
+
+    <!-- TEMPLATE: Size Guide Post -->
+    <div class="post-container" style="display: none;">
+        <div class="content">
+            <div class="text-content">
+                <h1>Find Your Fit</h1>
+                <p style="font-size: 1.8rem; margin: 2rem 0;">Head circumference 54-62cm?</p>
+                <p style="font-size: 1.5rem;">Our adjustable snapback fits most.</p>
+                <p style="margin-top: 3rem; font-size: 1.3rem; color: #C9A227;">📏 Size guide in link</p>
+            </div>
+        </div>
+        <div class="footer-badge">megacaps.co.uk</div>
+    </div>
+
+    <!-- TEMPLATE: Testimonial Post -->
+    <div class="post-container" style="display: none;">
+        <div class="content">
+            <div class="text-content">
+                <p style="font-size: 2.5rem; font-style: italic; color: #C9A227; margin-bottom: 2rem;">"{{TESTIMONIAL}}"</p>
+                <p style="font-size: 1.5rem;">— {{CUSTOMER_NAME}}</p>
+                <div class="cta-text" style="margin-top: 3rem;">See reviews</div>
+            </div>
+        </div>
+        <div class="footer-badge">⭐⭐⭐⭐⭐</div>
+    </div>
+
+    <script>
+        // Note: This is an HTML template for design reference
+        // For actual social media posting, use Canva, Figma, or social media management tools
+        // and replace placeholders like {{PRODUCT_NAME}}, {{DISCOUNT}}, etc.
+        
+        console.log('MEGA Caps Instagram Template 1080x1080px');
+        console.log('Variants: Product Launch, Lifestyle, Flash Sale, Community, Size Guide, Testimonial');
+    </script>
+</body>
+</html>

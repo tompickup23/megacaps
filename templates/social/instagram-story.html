@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Story Template — MEGA Caps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', Arial, sans-serif; background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 1rem; }
+        
+        .story-container { 
+            width: 1080px; 
+            height: 1920px; 
+            background: linear-gradient(135deg, #0A1628 0%, #1A3244 50%, #0A1628 100%);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            position: relative; 
+            overflow: hidden;
+        }
+
+        /* Background elements */
+        .story-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(180deg, rgba(201, 162, 39, 0.2) 0%, transparent 100%);
+            z-index: 1;
+        }
+
+        .story-container::after {
+            content: '';
+            position: absolute;
+            bottom: 100px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(200, 16, 46, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 4rem 2rem;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .product-image {
+            width: 400px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px dashed #C9A227;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            color: #C8102E;
+            font-weight: 900;
+            margin: 2rem 0;
+        }
+
+        .text-content {
+            color: #FFFFFF;
+        }
+
+        .text-content h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #C9A227;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-content p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin: 0.75rem 0;
+            line-height: 1.6;
+        }
+
+        .cta-badge {
+            background: #C8102E;
+            color: #FFFFFF;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(200, 16, 46, 0.3);
+            transform: rotate(-2deg);
+        }
+
+        .timer-badge {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            color: #FFFFFF;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .brand-watermark {
+            position: absolute;
+            bottom: 3rem;
+            left: 2rem;
+            color: #C9A227;
+            font-weight: 900;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Variation: Question Sticker */
+        .question-box {
+            background: rgba(201, 162, 39, 0.15);
+            border: 2px solid #C9A227;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            font-size: 1.5rem;
+            max-width: 700px;
+        }
+
+        /* Variation: Poll */
+        .poll-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .poll-option {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #C9A227;
+            padding: 1.5rem;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .poll-option:hover {
+            background: rgba(200, 16, 46, 0.2);
+            border-color: #C8102E;
+        }
+
+        /* Variation: Countdown */
+        .countdown {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #C8102E;
+            margin: 1rem 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .countdown-label {
+            font-size: 1.3rem;
+            color: #C9A227;
+            margin-bottom: 1rem;
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .story-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- TEMPLATE: New Product Announcement -->
+    <div class="story-container">
+        <div class="timer-badge">Limited stock</div>
+        <div class="content">
+            <div class="text-content">
+                <h1>New Drop</h1>
+                <p style="margin: 1rem 0; font-size: 1.8rem;">MEGA {{PRODUCT_NAME}}</p>
+                <div class="product-image">MEGA</div>
+                <p style="font-size: 1.5rem; margin-top: 1rem;">Available now</p>
+                <div class="cta-badge">Tap for link</div>
+            </div>
+        </div>
+        <div class="brand-watermark">MEGA CAPS</div>
+    </div>
+
+    <!-- TEMPLATE: Flash Sale -->
+    <div class="story-container" style="display: none;">
+        <div class="timer-badge" style="background: #C8102E;">⏰ 24H ONLY</div>
+        <div class="content">
+            <div class="text-content">
+                <h1 style="font-size: 4rem; color: #C8102E;">{{DISCOUNT}}% OFF</h1>
+                <p style="font-size: 2rem; margin-top: 1rem;">All Caps</p>
+                <div class="countdown">{{HOURS}}h left</div>
+                <div class="cta-badge">Shop now</div>
+            </div>
+        </div>
+        <div class="brand-watermark">MEGA CAPS</div>
+    </div>
+
+    <!-- TEMPLATE: Poll / Engagement -->
+    <div class="story-container" style="display: none;">
+        <div class="content">
+            <div class="text-content">
+                <h1 style="font-size: 2.5rem;">Which one?</h1>
+                <div class="poll-options">
+                    <div class="poll-option">Red Classic</div>
+                    <div class="poll-option">Black & Gold</div>
+                </div>
+                <p style="font-size: 1rem; margin-top: 2rem; color: #C9A227;">Vote by tapping</p>
+            </div>
+        </div>
+        <div class="brand-watermark">MEGA CAPS</div>
+    </div>
+
+    <!-- TEMPLATE: Question Sticker -->
+    <div class="story-container" style="display: none;">
+        <div class="content">
+            <div class="text-content">
+                <h1 style="margin-bottom: 2rem;">Your thoughts?</h1>
+                <div class="question-box">
+                    What's your style? 🧢
+                </div>
+                <p style="margin-top: 2rem; font-size: 1.2rem;">Reply to share</p>
+            </div>
+        </div>
+        <div class="brand-watermark">MEGA CAPS</div>
+    </div>
+
+    <!-- TEMPLATE: Countdown -->
+    <div class="story-container" style="display: none;">
+        <div class="timer-badge">Launching soon</div>
+        <div class="content">
+            <div class="text-content">
+                <p class="countdown-label">MEGA Union Jack arrives in</p>
+                <div class="countdown">2D 14H</div>
+                <p style="font-size: 1.5rem; margin-top: 1rem;">Be ready.</p>
+                <div class="cta-badge">Notify me</div>
+            </div>
+        </div>
+        <div class="brand-watermark">MEGA CAPS</div>
+    </div>
+
+    <!-- TEMPLATE: Customer Spotlight -->
+    <div class="story-container" style="display: none;">
+        <div class="timer-badge">Featured</div>
+        <div class="content">
+            <div class="text-content">
+                <h1 style="font-size: 2.5rem;">Spotted in the wild</h1>
+                <div class="product-image" style="height: 600px;">@USER</div>
+                <p style="margin-top: 2rem; font-size: 1.3rem;">Tag us with #MEGACaps</p>
+            </div>
+        </div>
+        <div class="brand-watermark">MEGA CAPS</div>
+    </div>
+
+    <script>
+        console.log('MEGA Caps Instagram Story Template 1080x1920px');
+        console.log('Variants: New Product, Flash Sale, Poll, Question, Countdown, Customer Spotlight');
+    </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter/X Post Template — MEGA Caps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 1rem; flex-wrap: wrap; }
+        
+        .tweet-card { 
+            width: 1200px; 
+            height: 675px; 
+            background: linear-gradient(135deg, #0A1628 0%, #1A3244 100%);
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            position: relative; 
+            overflow: hidden;
+            padding: 3rem;
+            margin: 1rem;
+        }
+
+        .tweet-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(200, 16, 46, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left-content {
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-visual {
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-visual {
+            width: 350px;
+            height: 350px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px solid #C9A227;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            color: #C8102E;
+            font-weight: 900;
+        }
+
+        .tweet-text {
+            color: #FFFFFF;
+            max-width: 450px;
+        }
+
+        .tweet-text h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+            line-height: 1.2;
+        }
+
+        .tweet-text p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .hashtags {
+            color: #C9A227;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        .cta-text {
+            color: #C8102E;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .header-badge {
+            background: rgba(0, 0, 0, 0.6);
+            color: #C9A227;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .footer-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(200, 16, 46, 0.1) 100%);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(201, 162, 39, 0.3);
+        }
+
+        .footer-text {
+            color: #C9A227;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .share-info {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+        }
+
+        /* Variation: Announcement */
+        .variant-announcement .right-visual {
+            display: none;
+        }
+
+        .variant-announcement .left-content {
+            flex: 1;
+            align-items: center;
+            text-align: center;
+        }
+
+        .variant-announcement .tweet-text {
+            max-width: 800px;
+        }
+
+        /* Variation: Quote/Testimonial */
+        .quote-block {
+            background: rgba(201, 162, 39, 0.1);
+            border-left: 4px solid #C9A227;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #FFFFFF;
+            margin: 1rem 0;
+        }
+
+        /* Variation: Comparison */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            max-width: 500px;
+        }
+
+        .comparison-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #C9A227;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .comparison-item h3 {
+            color: #C8102E;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .comparison-item p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .tweet-card { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- TEMPLATE: Product Launch -->
+    <div class="tweet-card">
+        <div class="left-content">
+            <div class="header-badge">NEW</div>
+            <div class="tweet-text">
+                <h2>MEGA {{PRODUCT_NAME}} is live</h2>
+                <p>Premium quality. Bold design. Made in England.</p>
+                <p style="font-size: 1.5rem; color: #C9A227; font-weight: 700;">{{PRICE}}</p>
+                <div class="cta-text">Shop now → megacaps.co.uk</div>
+                <div class="hashtags">#MEGACaps #EnglandPride</div>
+            </div>
+        </div>
+        <div class="right-visual">
+            <div class="product-visual">MEGA</div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-text">megacaps.co.uk</div>
+            <div class="share-info">💬 RT to spread</div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE: Flash Sale Announcement -->
+    <div class="tweet-card" style="display: none;">
+        <div class="left-content">
+            <div class="header-badge">⚡ LIMITED TIME</div>
+            <div class="tweet-text">
+                <h2 style="font-size: 3rem; color: #C8102E;">{{DISCOUNT}}% OFF</h2>
+                <p>All caps. 24 hours only.</p>
+                <p style="font-size: 1.4rem; color: #C9A227;">Ends {{TIME}}</p>
+                <div class="cta-text">Don't miss out →</div>
+                <div class="hashtags">#SaleAlert</div>
+            </div>
+        </div>
+        <div class="right-visual">
+            <div class="product-visual">MEGA</div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-text">megacaps.co.uk</div>
+            <div class="share-info">🔥 Share the deal</div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE: Testimonial / Community -->
+    <div class="tweet-card" style="display: none;">
+        <div class="left-content">
+            <div class="header-badge">CUSTOMER LOVE</div>
+            <div class="tweet-text">
+                <div class="quote-block">
+                    "{{TESTIMONIAL}}"
+                </div>
+                <p>— {{CUSTOMER_NAME}}</p>
+                <div class="hashtags">⭐⭐⭐⭐⭐ #MEGACaps</div>
+                <div class="cta-text">Read more reviews →</div>
+            </div>
+        </div>
+        <div class="right-visual">
+            <div class="product-visual" style="font-size: 80px;">🧢</div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-text">megacaps.co.uk</div>
+            <div class="share-info">Help others discover us</div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE: Announcement -->
+    <div class="tweet-card variant-announcement" style="display: none;">
+        <div class="left-content">
+            <div class="header-badge">COMING SOON</div>
+            <div class="tweet-text">
+                <h2>MEGA Union Jack drops next week</h2>
+                <p>Bold flag design. Premium quality. First access for followers.</p>
+                <div class="hashtags">#MEGACaps #NewDrop</div>
+                <div class="cta-text">Turn on notifications →</div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-text">megacaps.co.uk</div>
+            <div class="share-info">Follow for launch updates</div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE: Care Tips / Education -->
+    <div class="tweet-card" style="display: none;">
+        <div class="left-content">
+            <div class="header-badge">💡 CARE TIPS</div>
+            <div class="tweet-text">
+                <h2 style="font-size: 2rem;">Keep your MEGA looking sharp</h2>
+                <p>✓ Hand wash only</p>
+                <p>✓ Air dry naturally</p>
+                <p>✓ Never tumble dry</p>
+                <div class="hashtags">Your cap will last years</div>
+                <div class="cta-text">Full guide on our FAQ →</div>
+            </div>
+        </div>
+        <div class="right-visual">
+            <div class="product-visual" style="font-size: 100px;">🧼</div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-text">megacaps.co.uk/faq</div>
+            <div class="share-info">Help a friend keep theirs clean</div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE: Comparison / Why MEGA -->
+    <div class="tweet-card" style="display: none;">
+        <div class="left-content">
+            <div class="header-badge">Why MEGA?</div>
+            <div class="tweet-text">
+                <h2 style="font-size: 1.8rem;">Premium isn't expensive</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <h3>Quality</h3>
+                        <p>Premium cotton twill</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Design</h3>
+                        <p>Bold. Unmistakable.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Price</h3>
+                        <p>From £24.99</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Service</h3>
+                        <p>30-day returns</p>
+                    </div>
+                </div>
+                <div class="cta-text">Shop the collection →</div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-text">megacaps.co.uk</div>
+            <div class="share-info">Quality meets value</div>
+        </div>
+    </div>
+
+    <script>
+        console.log('MEGA Caps Twitter/X Template 1200x675px');
+        console.log('Variants: Product Launch, Flash Sale, Testimonial, Announcement, Care Tips, Comparison');
+    </script>
+</body>
+</html>

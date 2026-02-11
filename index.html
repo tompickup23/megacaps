@@ -134,6 +134,9 @@
                         <h3 class="product-card__title">MEGA Classic Red</h3>
                         <p class="product-card__desc">The original. Bold red canvas with crisp white embroidery that doesn't whisper — it speaks.</p>
                         <p class="product-card__price">&pound;24.99</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
+                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
                                 data-id="mega-classic-red" 
@@ -149,6 +152,9 @@
                         <h3 class="product-card__title">MEGA Classic Navy</h3>
                         <p class="product-card__desc">Understated power. Deep navy canvas for those who let their actions do the talking.</p>
                         <p class="product-card__price">&pound;24.99</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
+                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
                                 data-id="mega-classic-navy" 
@@ -164,6 +170,9 @@
                         <h3 class="product-card__title">MEGA White &amp; Red</h3>
                         <p class="product-card__desc">The flagbearer. Clean white canvas with St George's Cross inspiration — pure, bold, unmistakable.</p>
                         <p class="product-card__price">&pound;26.99</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
+                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
                                 data-id="mega-white-red" 
@@ -179,11 +188,42 @@
                         <h3 class="product-card__title">MEGA Black &amp; Gold</h3>
                         <p class="product-card__desc">The premium edition. Black velvet touch with gold crown detailing — for those who wear victory.</p>
                         <p class="product-card__price">&pound;29.99</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.8rem;">
+                            <a href="javascript:void(0)" class="open-size-guide" style="color: var(--text-light); text-decoration: underline; flex: 1; text-align: center;">Size Guide</a>
+                        </div>
                         <button class="product-card__btn" 
                                 data-add-to-cart 
                                 data-id="mega-black-gold" 
                                 data-name="MEGA Black & Gold" 
                                 data-price="29.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Coming Soon: MEGA Camo Edition -->
+                <div class="product-card coming-soon">
+                    <div class="product-card__image-placeholder" style="background:#667A5C;color:#FFFFFF;position:relative;">
+                        <span class="coming-soon-badge">Coming Soon</span>
+                        MEGA
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">MEGA Camo Edition</h3>
+                        <p class="product-card__desc">Tactical meets style. Limited camo pattern with embroidered detailing — for those who stand out subtly.</p>
+                        <p class="product-card__price">&pound;27.99</p>
+                        <button class="product-card__btn">Notify When Available</button>
+                    </div>
+                </div>
+
+                <!-- Coming Soon: MEGA Union Jack -->
+                <div class="product-card coming-soon">
+                    <div class="product-card__image-placeholder" style="background:var(--red);color:var(--white);position:relative;">
+                        <span class="coming-soon-badge">Coming Soon</span>
+                        MEGA
+                    </div>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">MEGA Union Jack</h3>
+                        <p class="product-card__desc">Bold flag design. Premium cotton with full Union Jack embroidery — pure British pride, wearable art.</p>
+                        <p class="product-card__price">&pound;28.99</p>
+                        <button class="product-card__btn">Notify When Available</button>
                     </div>
                 </div>
             </div>
@@ -215,11 +255,78 @@
         </div>
     </section>
 
+    <!-- Size Guide Modal -->
+    <div id="sizeGuideModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Size Guide</h2>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            
+            <h3 style="color: var(--blue); margin-top: 0; font-weight: 700;">How to Measure</h3>
+            <p>Use a soft measuring tape and wrap it around your head at the widest point (just above your ears). Record the measurement in centimetres.</p>
+
+            <h3 style="color: var(--blue); font-weight: 700; margin-top: 1.5rem;">Size Conversion Chart</h3>
+            <table class="size-guide-table">
+                <thead>
+                    <tr>
+                        <th>Head Circumference (cm)</th>
+                        <th>UK/EU Size</th>
+                        <th>US Size</th>
+                        <th>Fit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>54 - 56</td>
+                        <td>XS</td>
+                        <td>6&frac5;8 - 7</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 58</td>
+                        <td>S</td>
+                        <td>7 - 7&frac1;8</td>
+                        <td>Small/Medium</td>
+                    </tr>
+                    <tr>
+                        <td>58 - 60</td>
+                        <td>M</td>
+                        <td>7&frac1;8 - 7&frac1;4</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>60 - 62</td>
+                        <td>L</td>
+                        <td>7&frac1;4 - 7&frac3;8</td>
+                        <td>Large</td>
+                    </tr>
+                    <tr>
+                        <td>62+</td>
+                        <td>XL</td>
+                        <td>7&frac3;8+</td>
+                        <td>Extra Large</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="color: var(--blue); font-weight: 700; margin-top: 1.5rem;">Our Caps</h3>
+            <p><strong>All MEGA Caps feature an adjustable snapback closure</strong>, which means one size fits most adults (head circumference 54-62 cm). The snapback can be tightened or loosened for a comfortable, personalised fit.</p>
+
+            <p style="margin-bottom: 0; color: var(--text-light); font-size: 0.9rem;"><strong>Need help?</strong> Check our <a href="faq.html" style="color: var(--red);">FAQ</a> for more sizing questions, or email us at hello@megacaps.co.uk.</p>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 MEGA Caps &bull; megacaps.co.uk</p>
             <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+                <a href="faq.html">FAQ</a> &bull;
+                <a href="terms.html">Terms</a> &bull;
+                <a href="privacy.html">Privacy</a> &bull;
+                <a href="returns.html">Returns</a> &bull;
+                <a href="press.html">Press Kit</a> &bull;
                 <a href="about.html">About</a> &bull;
                 <a href="https://instagram.com/megacaps" target="_blank" rel="noopener">Instagram</a> &bull;
                 <a href="https://x.com/megacaps" target="_blank" rel="noopener">X</a>
@@ -228,5 +335,6 @@
     </footer>
 
     <script src="js/shop.js"></script>
+    <script src="js/faq.js"></script>
 </body>
 </html>
