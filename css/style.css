@@ -278,20 +278,24 @@ img {
     .hero {
         justify-content: flex-start;
         text-align: center;
-        padding-top: 12vh;
+        padding-top: 15vh;
+        min-height: 80vh;
     }
     .hero::before {
-        /* Move plane to bottom, show sky above */
-        background-position: center 75%;
-        background-size: cover;
+        /* Show bottom portion where plane is */
+        background-position: center 100%;
+        background-size: auto 130%;
+        background-repeat: no-repeat;
     }
     .hero .container {
         margin-left: auto;
         text-align: center;
         max-width: 90%;
+        z-index: 10;
     }
     .hero__title {
-        font-size: clamp(2.5rem, 10vw, 4rem);
+        font-size: clamp(2.2rem, 9vw, 3.5rem);
+        text-shadow: 0 2px 20px rgba(0,0,0,0.5);
     }
 }
 
