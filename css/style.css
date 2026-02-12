@@ -129,8 +129,6 @@ img {
     text-transform: uppercase;
     font-family: var(--font-serif);
     transition: var(--transition);
-    flex: 1;
-    text-align: center;
 }
 
 .site-header__logo:hover {
