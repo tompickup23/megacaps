@@ -276,12 +276,19 @@ img {
 
 @media (max-width: 768px) {
     .hero {
-        justify-content: center;
+        justify-content: flex-start;
         text-align: center;
+        padding-top: 15vh;
+    }
+    .hero::before {
+        /* Shift image up so plane appears below text */
+        background-position: center 30%;
+        background-size: auto 120%;
     }
     .hero .container {
         margin-left: auto;
         text-align: center;
+        max-width: 90%;
     }
 }
 
