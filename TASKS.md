@@ -22,7 +22,9 @@ Update this file as you pick up or complete work.
       `js/products.js` returns FORM_NOT_FOUND (verified 27 Aug 2026): email
       capture has never worked. Create a form at formspree.io for
       megacaps.co.uk and replace the ID in both files.
-- [ ] Register megacaps.co.uk on plausible.io so the analytics snippet goes live
+- [x] ~~Register megacaps.co.uk on plausible.io~~ Replaced 27 Aug: the site now
+      carries a Cloudflare Web Analytics beacon (site-specific token), live as
+      soon as this branch deploys. Plausible is not used.
 
 ## Phase 2
 
