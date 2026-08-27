@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEGA Caps | Make England Great Again | Premium English Caps</title>
     <meta name="description" content="Premium Make England Great Again caps. Bold embroidered designs, adjustable one-size fit, 30-day returns. Shop the MEGA collection.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- Open Graph -->
     <meta property="og:title" content="MEGA Caps | Make England Great Again">
@@ -36,14 +37,15 @@
 
     <!-- JSON-LD Structured Data (keep prices in step with js/products.js) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "OnlineStore",
-      "name": "MEGA Caps",
-      "url": "https://megacaps.co.uk",
-      "description": "Premium Make England Great Again caps. Bold embroidered designs, made for England."
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "OnlineStore",
+  "@id": "https://megacaps.co.uk/#organization",
+  "name": "MEGA Caps",
+  "url": "https://megacaps.co.uk",
+  "description": "Premium Make England Great Again caps. Bold embroidered designs, made for England."
+}
+</script>
     <script type="application/ld+json">
     [{
       "@context": "https://schema.org",
@@ -81,6 +83,24 @@
       "brand": { "@type": "Brand", "name": "MEGA Caps" },
       "offers": { "@type": "Offer", "price": "29.99", "priceCurrency": "GBP", "availability": "https://schema.org/InStock", "url": "https://megacaps.co.uk/#products" }
     }]
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://megacaps.co.uk/#website",
+          "name": "MEGA Caps",
+          "url": "https://megacaps.co.uk/",
+          "inLanguage": "en-GB",
+          "description": "Premium Make England Great Again caps. Bold embroidered designs, adjustable one-size fit, 30-day returns.",
+          "publisher": {
+            "@id": "https://megacaps.co.uk/#organization"
+          }
+        }
+      ]
+    }
     </script>
 </head>
 <body>
