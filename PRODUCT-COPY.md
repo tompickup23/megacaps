@@ -45,14 +45,14 @@ and any day you want to make a statement without saying a word.
 
 When ordinary will not do. Soft-touch suede-look finish in deep black with
 gold MEGA embroidery and a crown detail above the letters. Leather-style
-strap with a gold buckle. Limited production run: when they are gone, they
-are gone.
+strap with a gold buckle. Released in limited drop windows: when a window
+closes, the design is retired.
 
 - Premium faux-suede finish in deep black
 - Metallic gold MEGA embroidery with crown detail
 - Leather-style adjustable strap with gold buckle
 - Padded sweatband for extended wear
-- Limited edition run
+- Limited drop windows, retired after release
 
 ## MEGA Camo Edition, £27.99 (coming soon)
 
