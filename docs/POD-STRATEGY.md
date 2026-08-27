@@ -1,4 +1,4 @@
-# MEGA Caps POD Strategy — Hands-Off, Zero-Inventory Growth Plan
+# MEGA Caps POD Strategy : hands-Off, Zero-Inventory Growth Plan
 
 **Document Created:** 12 February 2026  
 **Status:** Ready to execute  
@@ -155,7 +155,7 @@ Phase 1: Launch (Weeks 1–4)        Phase 2: Optimize (Weeks 5–12)      Phase
 
 ---
 
-### Phase 2B: Add Second Platform (Printify) — Week 5–6
+### Phase 2B: Add Second Platform (Printify) : week 5–6
 
 **Objective:** Optimize costs, serve price-sensitive customers  
 **Time:** 3–4 hours  
@@ -290,7 +290,7 @@ Create two product tiers:
 - Request volume pricing (if available)
 - Build white-label/branding package
 
-**Direct approach (Phase 3.5 — Optional):**
+**Direct approach (Phase 3.5 : optional):**
 - If demand proven (1,000+ orders/month)
 - Consider hybrid: 70% POD + 30% bulk manufacturing
 - Bulk order 200–300 units from UK manufacturer (Result Headwear, Beechfield)

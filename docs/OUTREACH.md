@@ -1,4 +1,4 @@
-# MEGA Caps Supplier Outreach — Email Templates & Strategy
+# MEGA Caps Supplier Outreach : email Templates & Strategy
 
 **Document Created:** 12 February 2026  
 **Purpose:** Ready-to-send email templates for supplier outreach  
@@ -37,7 +37,7 @@
 ## TEMPLATE 1: POD PLATFORM OUTREACH (Phase 1 Testing)
 
 **To:** Printful / Printify support (or sales team)  
-**Subject:** Cap Design Testing & Sample Order — Potential High-Volume Customer
+**Subject:** Cap Design Testing & Sample Order : potential High-Volume Customer
 
 ---
 
@@ -103,7 +103,7 @@ MEGA Caps (megacaps.co.uk)
 ### Follow-Up (If No Response in 72 Hours)
 
 ```
-Subject: RE: Cap Design Testing & Sample Order — Printful/Printify [Your Brand]
+Subject: RE: Cap Design Testing & Sample Order : printful/Printify [Your Brand]
 
 Hi [Team],
 
@@ -124,7 +124,7 @@ Cheers,
 ## TEMPLATE 2: UK MANUFACTURER OUTREACH (Phase 2 Scale)
 
 **To:** Result Headwear, Beechfield  
-**Subject:** Custom Cap Order Inquiry — 100–200 Unit Run for New Brand
+**Subject:** Custom Cap Order Inquiry, 100–200 Unit Run for New Brand
 
 ---
 
@@ -143,7 +143,7 @@ ORDER SPECS:
 - Quantity: 100–200 units (initial order)
 - Product: [6-panel cap / baseball cap / specific style]
 - Decoration: Embroidered logo (front, chest) + [optional: label/patch]
-- Colours: 3 colourways (black, navy, khaki — example)
+- Colours: 3 colourways (black, navy, khaki, example)
 - Timeline: Flexible (2–4 weeks acceptable)
 - Design: I have finished artwork (vector, high-res)
 
@@ -172,7 +172,7 @@ Could you send over:
 - Lead time estimate?
 - Information on embroidery capabilities?
 
-Ideally, I'd like to move quickly — potentially placing an order within 
+Ideally, I'd like to move quickly, potentially placing an order within 
 2–3 weeks if the fit is right.
 
 Thanks,
@@ -196,7 +196,7 @@ MEGA Caps (megacaps.co.uk)
 ### Follow-Up (If No Response in 3 Days)
 
 ```
-Subject: RE: Custom Cap Order Inquiry — MEGA Caps [100–200 Unit Run]
+Subject: RE: Custom Cap Order Inquiry : mEGA Caps [100–200 Unit Run]
 
 Hi [Contact],
 
@@ -219,7 +219,7 @@ Cheers,
 ### Secondary Follow-Up (Week 2, If Still No Response)
 
 ```
-Subject: Quick Question — MEGA Caps Supplier Partnership
+Subject: Quick Question : mEGA Caps Supplier Partnership
 
 Hi [Contact],
 
@@ -241,7 +241,7 @@ Thanks,
 ## TEMPLATE 3: PREMIUM MANUFACTURER OUTREACH (Phase 3 Limited Drops)
 
 **To:** Atlantis Headwear, Fifth Column, Flexfit  
-**Subject:** Limited Edition Cap Collaboration — Custom Design & Premium Production
+**Subject:** Limited Edition Cap Collaboration : custom Design & Premium Production
 
 ---
 
@@ -255,7 +255,7 @@ We're a premium, UK-based cap brand launching in 2026 with a focus on
 exclusivity and craftsmanship.
 
 We're interested in partnering with [Atlantis/Flexfit/Fifth Column] for our 
-first premium drop — positioning as a limited edition, Italian-made [or 
+first premium drop, positioning as a limited edition, Italian-made [or 
 premium British] offering.
 
 PROJECT SPECS:
@@ -324,7 +324,7 @@ MEGA Caps (megacaps.co.uk)
 ### Follow-Up (If No Response in 5 Days)
 
 ```
-Subject: RE: Limited Edition Cap Collaboration — MEGA Caps Premium Drop
+Subject: RE: Limited Edition Cap Collaboration : mEGA Caps Premium Drop
 
 Hi [Contact],
 
@@ -350,7 +350,7 @@ Cheers,
 ## TEMPLATE 4: EMBROIDERY SPECIALIST OUTREACH (Premium Decoration)
 
 **To:** Fifth Column, local embroidery specialists  
-**Subject:** Premium Embroidery Service Inquiry — Cap Logo Decoration
+**Subject:** Premium Embroidery Service Inquiry : cap Logo Decoration
 
 ---
 
@@ -417,7 +417,7 @@ MEGA Caps (megacaps.co.uk)
 ### Email Body
 
 ```
-Subject: RE: [Original Subject] — Sample Request Follow-Up
+Subject: RE: [Original Subject] : sample Request Follow-Up
 
 Hi [Name],
 
@@ -455,7 +455,7 @@ Cheers,
 ### Email Body
 
 ```
-Subject: RE: MEGA Caps Quote — Trade Account Discussion
+Subject: RE: MEGA Caps Quote : trade Account Discussion
 
 Hi [Name],
 

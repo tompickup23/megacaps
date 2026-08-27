@@ -1,4 +1,4 @@
-# MEGA Caps Supplier Research — Complete Documentation
+# MEGA Caps Supplier Research: Complete Documentation
 
 **Created:** 12 February 2026  
 **Status:** READY FOR IMMEDIATE USE  
@@ -8,7 +8,7 @@
 
 ## 📋 DOCUMENT INDEX
 
-### 1. **SUPPLIERS.md** — Comprehensive Supplier Matrix
+### 1. **SUPPLIERS.md**: Comprehensive Supplier Matrix
 **What it contains:**
 - Detailed profiles of 6 UK/EU manufacturers (Result Headwear, Beechfield, Atlantis, Flexfit, Fifth Column, others)
 - POD platform comparison (Printful, Printify, Gelato, AOP+)
@@ -26,7 +26,7 @@
 
 ---
 
-### 2. **PHASE-PLAN.md** — Three-Phase Growth Roadmap
+### 2. **PHASE-PLAN.md**: Three-Phase Growth Roadmap
 **What it contains:**
 - Detailed breakdown of Phase 1 (Design Validation), Phase 2 (Scale), Phase 3 (Premium)
 - Recommended suppliers for each phase (with rationale)
@@ -47,7 +47,7 @@
 
 ---
 
-### 3. **OUTREACH.md** — Email Templates & Outreach Strategy
+### 3. **OUTREACH.md**: Email Templates & Outreach Strategy
 **What it contains:**
 - 6 ready-to-send email templates (POD, manufacturers, premium, embroidery, follow-ups, negotiation)
 - Customization notes for each supplier
@@ -68,7 +68,7 @@
 
 ---
 
-### 4. **README.md** (This File) — Quick Navigation
+### 4. **README.md** (This File): Quick Navigation
 **What it contains:**
 - Document index and usage guide
 - Quick decision tree (which supplier to approach first)
@@ -110,23 +110,23 @@
 
 **Question 1: How many units do you want to test initially?**
 
-**A) 1–50 units, 0 inventory risk**  
-→ **Use POD (Printful or Printify)**  
+**A) 1–50 units. Zero inventory risk**
+→ **Use POD (Printful or Printify)**
 - Pros: Zero inventory, fast, easy
 - Cons: Higher per-unit cost
-- Go to: SUPPLIERS.md → Section 2, OUTREACH.md → Template 1
+- Go to: SUPPLIERS.md, Section 2; OUTREACH.md, Template 1
 
-**B) 50–200 units, small inventory risk**  
-→ **Use UK Manufacturer (Result Headwear or Beechfield)**  
+**B) 50–200 units. Small inventory risk**
+→ **Use UK Manufacturer (Result Headwear or Beechfield)**
 - Pros: Better pricing, faster turnaround, UK-based
 - Cons: MOQ commitment, inventory holding
-- Go to: SUPPLIERS.md → Section 1, PHASE-PLAN.md → Phase 2, OUTREACH.md → Template 2
+- Go to: SUPPLIERS.md, Section 1; PHASE-PLAN.md, Phase 2; OUTREACH.md, Template 2
 
-**C) 200+ units, premium positioning, limited drops**  
-→ **Use Premium Manufacturer (Atlantis or Flexfit Custom)**  
+**C) 200+ units. Premium positioning, limited drops**
+→ **Use Premium Manufacturer (Atlantis or Flexfit Custom)**
 - Pros: Premium brand positioning, custom options, prestige
 - Cons: Higher cost, longer lead time, larger commitment
-- Go to: SUPPLIERS.md → Section 1, PHASE-PLAN.md → Phase 3, OUTREACH.md → Template 3
+- Go to: SUPPLIERS.md, Section 1; PHASE-PLAN.md, Phase 3; OUTREACH.md, Template 3
 
 ---
 

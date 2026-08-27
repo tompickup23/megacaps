@@ -1,0 +1,13 @@
+{
+  "name": "MEGA Caps",
+  "short_name": "MEGA",
+  "description": "Make England Great Again — Premium patriotic headwear",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1628",
+  "theme_color": "#C8102E",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/apple-touch-icon.svg", "type": "image/svg+xml", "sizes": "180x180" }
+  ]
+}

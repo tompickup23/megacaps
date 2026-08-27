@@ -4,216 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Press Kit | MEGA Caps</title>
-    <meta name="description" content="MEGA Caps press kit — brand guidelines, media assets, founder bio, and press contact information.">
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer data-domain="megacaps.co.uk" src="https://plausible.io/js/script.js"></script>
+    <meta name="description" content="MEGA Caps press kit: brand guidelines, downloadable logo assets, founder bio, product lineup and media contact.">
+    <link rel="canonical" href="https://megacaps.co.uk/press.html">
+    <link rel="icon" href="public/brand/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "875ee5f5f1244b6aaa83c644610f91f5"}'></script>
 </head>
 <body>
-    <!-- Header -->
     <header class="site-header" id="siteHeader">
         <div class="container">
-            <a href="index.html" class="site-header__logo">MEGA</a>
-            <nav>
+            <a href="index.html" class="site-header__logo">
+                <img src="public/brand/icon.svg" alt="MEGA Caps crest" width="38" height="38">
+                <span class="logo-word">MEGA</span>
+            </a>
+            <nav aria-label="Main">
                 <ul class="site-nav">
-                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="index.html#products">Shop</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="cart.html" class="cart-link">Cart <span class="cart-count" style="display:none">0</span></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Page Title -->
-    <section class="page-header">
+    <section class="page-hero">
         <div class="container">
-            <h1 class="page-header__title">Press Kit</h1>
-            <p class="page-header__subtitle">Brand guidelines, assets, and media inquiries</p>
+            <h1>Press Kit</h1>
+            <p>Brand guidelines, downloadable assets and media contact for journalists, bloggers and partners.</p>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="press-section">
+    <section class="page-body">
         <div class="container">
-            <!-- Overview -->
-            <div class="press-module">
+            <div class="prose">
                 <h2>Brand Overview</h2>
-                <p>MEGA Caps is a premium British caps brand designed for those who aren't afraid to stand out. We create bold, high-quality caps that celebrate English pride and patriotism. Launched in 2026, MEGA has rapidly built a community of customers who value craftsmanship, confidence, and unapologetic British identity.</p>
-                <p><strong>Tagline:</strong> "Make England Great Again — Premium Quality Caps"</p>
-                <p><strong>Founded:</strong> 2026 | <strong>Based:</strong> England, UK | <strong>E-commerce:</strong> megacaps.co.uk</p>
-            </div>
+                <p>MEGA Caps is a premium British caps brand designed for people who prefer to stand out. We create bold, high-quality caps that celebrate English pride and patriotism. Launched in 2026, MEGA is building a community of customers who value craftsmanship, confidence, and unapologetic British identity.</p>
+                <p><strong>Tagline:</strong> "Make England Great Again. Premium Quality Caps."</p>
+                <p><strong>Founded:</strong> 2026 &bull; <strong>Based:</strong> England, UK &bull; <strong>E-commerce:</strong> megacaps.co.uk</p>
 
-            <!-- Brand Guidelines -->
-            <div class="press-module">
                 <h2>Brand Guidelines</h2>
-                
-                <h3 style="font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 1rem; color: var(--blue);">Colour Palette</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-                    <div>
-                        <div style="width: 100%; height: 80px; background: #C8102E; border-radius: 4px; margin-bottom: 0.5rem;"></div>
-                        <p><strong>MEGA Red</strong><br>#C8102E<br>Primary colour — bold, commanding</p>
-                    </div>
-                    <div>
-                        <div style="width: 100%; height: 80px; background: #0A1628; border-radius: 4px; margin-bottom: 0.5rem;"></div>
-                        <p><strong>Deep Blue</strong><br>#0A1628<br>Secondary colour — authoritative</p>
-                    </div>
-                    <div>
-                        <div style="width: 100%; height: 80px; background: #C9A227; border-radius: 4px; margin-bottom: 0.5rem;"></div>
-                        <p><strong>Gold Accent</strong><br>#C9A227<br>Premium detail — luxury touch</p>
-                    </div>
-                    <div>
-                        <div style="width: 100%; height: 80px; background: #FFFFFF; border: 2px solid var(--light-grey); border-radius: 4px; margin-bottom: 0.5rem;"></div>
-                        <p><strong>White</strong><br>#FFFFFF<br>Clean, professional</p>
-                    </div>
+
+                <h3>Colour Palette</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Colour</th><th>Hex</th><th>Role</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>England Red</strong></td><td>#C8102E</td><td>Primary colour: bold, commanding</td></tr>
+                            <tr><td><strong>Deep Navy</strong></td><td>#0A1628</td><td>Secondary colour: authoritative</td></tr>
+                            <tr><td><strong>Gold Accent</strong></td><td>#C9A227</td><td>Premium detail</td></tr>
+                            <tr><td><strong>Parchment</strong></td><td>#F4EFE6</td><td>Background and packaging</td></tr>
+                            <tr><td><strong>White</strong></td><td>#FFFFFF</td><td>Clean, professional</td></tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <h3 style="font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 1rem; color: var(--blue);">Typography</h3>
+                <h3>Typography</h3>
                 <ul>
-                    <li><strong>Primary Font:</strong> Inter (sans-serif) — modern, professional, highly readable</li>
-                    <li><strong>Display Font:</strong> Inter Heavy (900 weight) — bold headlines and branding</li>
-                    <li><strong>Recommended Fallback:</strong> -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto</li>
+                    <li><strong>Display font:</strong> Archivo Black, used for headlines and the wordmark</li>
+                    <li><strong>Body font:</strong> Inter (400, 600, 700), modern and highly readable</li>
+                    <li><strong>Recommended fallbacks:</strong> Arial Black for display; -apple-system, Segoe UI, Helvetica, Arial for body</li>
                 </ul>
 
-                <h3 style="font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 1rem; color: var(--blue);">Tone &amp; Voice</h3>
+                <h3>Tone &amp; Voice</h3>
                 <ul>
-                    <li><strong>Confident:</strong> Command attention without apology</li>
-                    <li><strong>Patriotic:</strong> Celebrate English pride authentically, not aggressively</li>
-                    <li><strong>Premium:</strong> Emphasise quality, craftsmanship, and value</li>
-                    <li><strong>Witty:</strong> Subtle humour, clever wordplay</li>
-                    <li><strong>Masculine:</strong> Strong energy, action-oriented copy</li>
+                    <li><strong>Confident:</strong> command attention without apology</li>
+                    <li><strong>Patriotic:</strong> celebrate English pride authentically, not aggressively</li>
+                    <li><strong>Premium:</strong> emphasise quality, craftsmanship, and value</li>
+                    <li><strong>Witty:</strong> subtle humour, clever wordplay</li>
+                    <li><strong>Direct:</strong> strong energy, action-oriented copy</li>
                 </ul>
-            </div>
 
-            <!-- Logo &amp; Assets -->
-            <div class="press-module">
                 <h2>Logo &amp; Assets</h2>
-                <p><strong>Primary Logo:</strong> "MEGA" wordmark in 900-weight Inter, set in red (#C8102E) or white (on dark backgrounds).</p>
-                
-                <div style="background: var(--off-white); padding: 2rem; border-radius: 4px; text-align: center; margin: 1.5rem 0;">
-                    <p style="font-size: 3rem; font-weight: 900; color: var(--red); letter-spacing: 2px;">MEGA</p>
-                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">Primary logo — use on white backgrounds</p>
-                </div>
-
-                <p style="margin-top: 1.5rem;"><strong>Logo Usage Rules:</strong></p>
+                <p>The primary lockup pairs the MEGA crest with the wordmark in Archivo Black. Use the boxed logo on solid backgrounds and the crest icon alone at small sizes.</p>
+                <h3>Usage Rules</h3>
                 <ul>
-                    <li>Never distort or stretch the logo</li>
-                    <li>Maintain clear space (1x the height of the letter "M")</li>
-                    <li>Use red (#C8102E) or white only — no other colours</li>
+                    <li>Never distort, stretch, or recolour the logo</li>
+                    <li>Maintain clear space equal to the height of the letter "M"</li>
+                    <li>Use the supplied light and dark variants rather than inverting colours yourself</li>
                     <li>Minimum size: 60px wide for web use</li>
-                    <li>Always use a professional typeface to render the logo</li>
                 </ul>
-
-                <p style="margin-top: 1.5rem;"><strong>Downloadable Assets:</strong></p>
+                <h3>Downloadable Assets (SVG)</h3>
                 <ul>
-                    <li><a href="images/favicon.svg" download>favicon.svg</a> — Square logo for favicons</li>
-                    <li>High-res product photos — <em>Available on request</em></li>
-                    <li>Brand colours CSS — Available in <code>css/style.css</code></li>
+                    <li><a href="public/brand/logo-primary.svg" download>logo-primary.svg</a>: primary lockup for light backgrounds</li>
+                    <li><a href="public/brand/logo-primary-dark.svg" download>logo-primary-dark.svg</a>: primary lockup for dark backgrounds</li>
+                    <li><a href="public/brand/logo-box.svg" download>logo-box.svg</a>: boxed wordmark, red</li>
+                    <li><a href="public/brand/logo-box-navy.svg" download>logo-box-navy.svg</a>: boxed wordmark, navy</li>
+                    <li><a href="public/brand/logo-box-white.svg" download>logo-box-white.svg</a>: boxed wordmark, white</li>
+                    <li><a href="public/brand/logo-box-black.svg" download>logo-box-black.svg</a>: boxed wordmark, black</li>
+                    <li><a href="public/brand/icon.svg" download>icon.svg</a>: crest icon for favicons and avatars</li>
                 </ul>
-            </div>
+                <p>High-resolution product photography is available on request via <a href="mailto:hello@megacaps.co.uk">hello@megacaps.co.uk</a>.</p>
 
-            <!-- Founder &amp; Team -->
-            <div class="press-module">
-                <h2>Founder &amp; Team</h2>
-                
-                <h3 style="font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 1rem; color: var(--blue);">Greg Rothwell, Founder</h3>
-                <p><strong>Title:</strong> Founder &amp; Creative Director</p>
-                <p><strong>Bio:</strong> Greg is a British entrepreneur and designer with a passion for quality products and unapologetic patriotism. Based in Rossendale, North of Manchester, he founded MEGA Caps in early 2026 to create premium caps for people who value boldness and craftsmanship. Greg combines design expertise with a deep understanding of his community, creating products that resonate with English pride.</p>
-                <p><strong>Background:</strong> [Placeholder — provide more detail as needed]</p>
-                <p><strong>Contact:</strong> contact@megacaps.co.uk</p>
-
-                <h3 style="font-size: 1.2rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--blue);">Creative &amp; Operations Team</h3>
-                <p>MEGA Caps operates as a lean, focused team. For specific inquiries about design, production, or operations, contact the main office at contact@megacaps.co.uk.</p>
-            </div>
-
-            <!-- Product Lineup -->
-            <div class="press-module">
-                <h2>Current Product Lineup</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
-                    <div style="border: 1px solid var(--light-grey); padding: 1.5rem; border-radius: 4px;">
-                        <h4 style="color: var(--blue); margin-bottom: 0.5rem;">MEGA Classic Red</h4>
-                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Premium cotton twill in patriotic crimson with bold white embroidery.</p>
-                        <p><strong>£24.99</strong></p>
-                    </div>
-                    <div style="border: 1px solid var(--light-grey); padding: 1.5rem; border-radius: 4px;">
-                        <h4 style="color: var(--blue); margin-bottom: 0.5rem;">MEGA Classic Navy</h4>
-                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Rich navy cotton with gold metallic embroidery for understated power.</p>
-                        <p><strong>£24.99</strong></p>
-                    </div>
-                    <div style="border: 1px solid var(--light-grey); padding: 1.5rem; border-radius: 4px;">
-                        <h4 style="color: var(--blue); margin-bottom: 0.5rem;">MEGA White &amp; Red</h4>
-                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Clean white canvas with St George's Cross-inspired design.</p>
-                        <p><strong>£26.99</strong></p>
-                    </div>
-                    <div style="border: 1px solid var(--light-grey); padding: 1.5rem; border-radius: 4px;">
-                        <h4 style="color: var(--blue); margin-bottom: 0.5rem;">MEGA Black &amp; Gold</h4>
-                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Premium edition with soft-touch finish and gold crown detailing. Limited run.</p>
-                        <p><strong>£29.99</strong></p>
-                    </div>
+                <h2>Founder</h2>
+                <h3>Greg Rothwell, Founder &amp; Creative Director</h3>
+                <p>Greg is a British entrepreneur and designer with a passion for quality products and unapologetic patriotism. Based in Rossendale, north of Manchester, he founded MEGA Caps in early 2026 to create premium caps for people who value boldness and craftsmanship. Greg combines design expertise with a deep understanding of his community, creating products that resonate with English pride.</p>
+                <div class="notice">
+                    <p>"Every cap is designed with one goal: to look sharp, feel comfortable, and start conversations."<br><strong>Greg Rothwell, Founder</strong></p>
                 </div>
-            </div>
+                <p>MEGA Caps operates as a lean, focused team. For questions about design, production, or operations, contact <a href="mailto:hello@megacaps.co.uk">hello@megacaps.co.uk</a>.</p>
 
-            <!-- Upcoming Releases -->
-            <div class="press-module">
+                <h2>Current Product Lineup</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Product</th><th>Description</th><th>Price</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>MEGA Classic Red</strong></td><td>Premium cotton twill in patriotic crimson with bold white embroidery</td><td>£24.99</td></tr>
+                            <tr><td><strong>MEGA Classic Navy</strong></td><td>Rich navy cotton with gold metallic embroidery for understated power</td><td>£24.99</td></tr>
+                            <tr><td><strong>MEGA White &amp; Red</strong></td><td>Clean white canvas with St George's Cross-inspired design</td><td>£26.99</td></tr>
+                            <tr><td><strong>MEGA Black &amp; Gold</strong></td><td>Premium edition with soft-touch finish and gold crown detailing. Limited run</td><td>£29.99</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <h2>Upcoming Releases</h2>
                 <ul>
-                    <li><strong>MEGA Camo Edition</strong> — Coming soon (£27.99) — Tactical design with camo pattern</li>
-                    <li><strong>MEGA Union Jack</strong> — Coming soon (£28.99) — Bold flag design</li>
-                    <li><strong>Limited editions &amp; seasonal drops</strong> — Announced via newsletter and social media</li>
+                    <li><strong>MEGA Camo Edition</strong> (£27.99): tactical design with camo pattern, coming soon</li>
+                    <li><strong>MEGA Union Jack</strong> (£28.99): bold flag design, coming soon</li>
+                    <li><strong>Limited editions and seasonal drops:</strong> announced via newsletter and social media</li>
                 </ul>
-            </div>
 
-            <!-- Media Contact -->
-            <div class="press-module" style="background: var(--off-white); padding: 2rem; border-radius: 4px;">
-                <h2>Media Inquiries</h2>
-                <p>For press inquiries, interviews, product reviews, or collaboration opportunities, contact:</p>
-                <p>
-                    <strong>Email:</strong> press@megacaps.co.uk<br>
-                    <strong>Response time:</strong> Within 48 hours
-                </p>
-                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-light);">
-                    <strong>What we cover:</strong> Product features, brand story, retail partnerships, event sponsorships, influencer collaborations, and media appearances.
-                </p>
-            </div>
-
-            <!-- Brand Resources -->
-            <div class="press-module">
-                <h2>Brand Resources</h2>
-                <p>For journalists, bloggers, and partners needing high-quality assets:</p>
-                <ul>
-                    <li>Product photography (high-res) — Request via press@megacaps.co.uk</li>
-                    <li>Brand guidelines — <a href="#" style="text-decoration: underline;">Brand Guidelines PDF</a> (placeholder link)</li>
-                    <li>Logo &amp; favicon — Available in <a href="images/favicon.svg">images/favicon.svg</a></li>
-                    <li>Company bio &amp; founder background — Provided on request</li>
-                </ul>
-            </div>
-
-            <!-- Awards &amp; Recognition -->
-            <div class="press-module">
-                <h2>Awards &amp; Recognition</h2>
-                <p><em>As a newly launched brand, we're building our track record. Award submissions and recognition from industry publications welcome.</em></p>
-                <p>Contact press@megacaps.co.uk to discuss features, awards, or collaboration opportunities.</p>
+                <h2>Media Enquiries</h2>
+                <div class="notice">
+                    <p>For press enquiries, interviews, product reviews, or collaboration opportunities:</p>
+                    <p><strong>Contact:</strong> Greg Rothwell, Founder<br>
+                    <strong>Email:</strong> <a href="mailto:hello@megacaps.co.uk">hello@megacaps.co.uk</a><br>
+                    <strong>Response time:</strong> within 48 hours</p>
+                </div>
+                <p><strong>What we cover:</strong> product features, brand story, retail partnerships, event sponsorships, influencer collaborations, and media appearances. As a newly launched brand we are building our track record, and award submissions and features from industry publications are welcome.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="site-footer__logo">MEGA</div>
-            <nav class="site-footer__links">
-                <a href="faq.html">FAQ</a>
-                <a href="about.html">About</a>
-                <a href="press.html">Press Kit</a>
-                <a href="returns.html">Returns</a>
-                <a href="terms.html">Terms</a>
-                <a href="privacy.html">Privacy</a>
-            </nav>
-            <div class="site-footer__copyright">
-                &copy; 2026 MEGA Caps &bull; megacaps.co.uk
+            <div class="site-footer__top">
+                <div>
+                    <div class="site-footer__brand">
+                        <img src="public/brand/icon.svg" alt="" width="40" height="40">
+                        <span>MEGA</span>
+                    </div>
+                    <p class="site-footer__tag">Premium caps, designed in England and worn with pride.</p>
+                </div>
+                <nav class="site-footer__links" aria-label="Footer">
+                    <a href="index.html#products">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="press.html">Press Kit</a>
+                    <a href="returns.html">Returns</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                </nav>
             </div>
+            <div class="site-footer__copyright">&copy; 2026 MEGA Caps &bull; megacaps.co.uk &bull; hello@megacaps.co.uk</div>
         </div>
     </footer>
 
+    <script src="js/products.js"></script>
     <script src="js/shop.js"></script>
 </body>
 </html>

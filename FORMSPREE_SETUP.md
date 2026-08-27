@@ -1,6 +1,14 @@
 # Formspree Email Capture Setup for megacaps.co.uk
 
-## Status: PARTIALLY COMPLETE
+## Status: BROKEN. The form does not exist.
+
+**Verified 27 Aug 2026:** a POST to `https://formspree.io/f/mzylkbwd` returns
+`FORM_NOT_FOUND`. The form was never created, so every waitlist signup and
+reserve-order submission to date has silently failed. Someone with the
+Formspree account must create a form for megacaps.co.uk and replace the ID in
+`index.html` and `js/products.js`. The original setup notes follow.
+
+## Original status: PARTIALLY COMPLETE
 
 ### What's Been Done
 

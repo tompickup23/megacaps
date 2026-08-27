@@ -1,4 +1,4 @@
-# MEGA Caps Supplier Research — Executive Summary
+# MEGA Caps Supplier Research: Executive Summary
 
 **Completed:** 12 February 2026  
 **Status:** READY FOR IMMEDIATE EXECUTION  
@@ -105,10 +105,10 @@ Phase 1: Validate      Phase 1+2: Plan      Phase 2: Execute     Phase 3: Premiu
 ## 🚀 NEXT STEPS (IMMEDIATE ACTIONS)
 
 ### This Week (Right Now)
-1. **Read README.md** (10 mins) — Navigate the research
-2. **Pick top 3 suppliers** (10 mins) — Based on your timeline
-3. **Copy email template from OUTREACH.md** (5 mins) — Template 1 for POD
-4. **Personalize and send** (10 mins) — To Printful, Printify, Beechfield
+1. **Read README.md** (10 mins) : navigate the research
+2. **Pick top 3 suppliers** (10 mins) : based on your timeline
+3. **Copy email template from OUTREACH.md** (5 mins) : template 1 for POD
+4. **Personalize and send** (10 mins) : to Printful, Printify, Beechfield
 
 **Total: ~35 minutes to start the process**
 
@@ -178,12 +178,12 @@ All files ready at:
 ## 🔗 HOW TO USE THIS RESEARCH
 
 ### For Quick Reference
-1. **README.md** — Navigation guide, quick decisions, FAQ
-2. **SUPPLIERS.md** — Supplier options, pricing, contact info
-3. **OUTREACH.md** — Email templates, copy & personalize
+1. **README.md** : navigation guide, quick decisions, FAQ
+2. **SUPPLIERS.md** : supplier options, pricing, contact info
+3. **OUTREACH.md** : email templates, copy & personalize
 
 ### For Planning
-1. **PHASE-PLAN.md** — Timeline, milestones, success criteria
+1. **PHASE-PLAN.md** : timeline, milestones, success criteria
 2. **PHASE-PLAN.md → Financial** → Budget planning
 3. **PHASE-PLAN.md → Timeline** → Set your calendar
 
@@ -231,11 +231,11 @@ All files ready at:
 
 ## ⚠️ CRITICAL WARNINGS
 
-1. **Don't skip Phase 1** — Testing directly with manufacturing risks dead stock. POD is cheap insurance.
-2. **Vet samples first** — Always request samples before committing to large orders. Quality varies.
-3. **Don't over-order** — Inventory is a liability. Start small, scale up as demand proves.
-4. **Watch supplier reliability** — Slow responders become late deliveries. Move to backup suppliers if needed.
-5. **Protect margins** — Know your costs (COGS + shipping + overhead). Retail price = 2–3x COGS minimum.
+1. **Don't skip Phase 1** : testing directly with manufacturing risks dead stock. POD is cheap insurance.
+2. **Vet samples first** : always request samples before committing to large orders. Quality varies.
+3. **Don't over-order** : inventory is a liability. Start small, scale up as demand proves.
+4. **Watch supplier reliability** : slow responders become late deliveries. Move to backup suppliers if needed.
+5. **Protect margins** : know your costs (COGS + shipping + overhead). Retail price = 2–3x COGS minimum.
 
 ---
 

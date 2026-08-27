@@ -1,56 +1,22 @@
 # Contributing to MEGA Caps
 
-## Collaborators
-
-| Who | GitHub | Role |
-|-----|--------|------|
-| Tom Pickup | @tompickup23 | Owner / Product |
-| Greg Rothwell | @gregjrothwell | Collaborator / Dev |
-| Claude | — | AI Dev (SEO, infrastructure, analytics) |
-
 ## Workflow
 
-1. **Branch from `main`** — create a feature branch for every change (`feature/add-product-page`, `fix/cart-bug`, etc.)
-2. **Keep commits small** — one logical change per commit.
-3. **Open a Pull Request** — describe what changed and why. Tag the other collaborator for review.
-4. **Review & merge** — at least one approval before merging to `main`.
-5. **Deploy is automatic** — pushing to `main` triggers GitHub Pages deploy.
-
-## Project Structure
-
-```
-megacaps/
-├── index.html          # Shop homepage (product grid + JSON-LD)
-├── cart.html           # Shopping cart
-├── about.html          # About & contact page
-├── success.html        # Post-payment confirmation
-├── 404.html            # Custom error page (GitHub Pages)
-├── css/
-│   └── style.css       # Shared styles & branding
-├── js/
-│   └── shop.js         # Cart logic & interactions
-├── images/             # Product photos & assets
-│   └── favicon.svg     # Site favicon
-├── site.webmanifest    # Web app manifest (favicon, theme)
-├── robots.txt          # Search engine crawl rules
-├── sitemap.xml         # Page index for search engines
-├── CONTRIBUTING.md     # This file
-├── TASKS.md            # Shared task board
-├── LOGO-PROMPTS.md     # 50 AI logo design prompts
-├── README.md           # Project overview
-└── .github/
-    └── workflows/
-        └── deploy.yml  # GitHub Pages CI
-```
+1. **Branch from `main`**: create a feature branch for every change (`feature/add-product-page`, `fix/cart-bug`, etc.)
+2. **Keep commits small**: one logical change per commit.
+3. **Open a Pull Request**: describe what changed and why.
+4. **Review and merge**: at least one approval before merging to `main`.
+5. **Deploy is automatic**: pushing to `main` triggers the GitHub Pages deploy.
 
 ## Conventions
 
-- **HTML** — semantic elements, no inline styles (use `css/style.css`).
-- **CSS** — BEM-ish naming (`.product-card`, `.product-card__title`).
-- **JS** — vanilla JS, no frameworks needed for now. Keep it simple.
-- **Images** — optimise before committing (< 200 KB each). Use `images/` directory.
-- **Colours** — stick to the brand palette defined in `css/style.css` (`:root` variables).
+- **HTML**: semantic elements, no inline styles (use `css/style.css`).
+- **CSS**: BEM-ish naming (`.product-card`, `.product-card__title`). Stick to the palette in `:root`.
+- **JS**: vanilla JS, no frameworks. Product data lives ONLY in `js/products.js`; pages render from it.
+- **Copy**: British English, no em-dashes anywhere, prices in £.
+- **Images**: optimise before committing (products ~1200px JPEG, under 300 KB).
+- **Secrets**: none in this repo, ever. Stripe Payment Links are public URLs and are fine; API keys are not.
 
 ## Quick Start
 
-No build step required. Just open `index.html` in a browser, or push to `main` for live deploy.
+No build step. Open `index.html` in a browser, or push to `main` for live deploy.
