@@ -1,46 +1,43 @@
 # MEGA Caps
 
-**Make England Great Again** — Premium quality caps, white-label ready.
-
-## About
-
-Niche merchandise for the UK market. Dropship and white-label options available.
+**Make England Great Again.** Premium quality caps, designed in England.
 
 ## Website
 
 - **Live:** https://megacaps.co.uk
-- **Repo:** https://github.com/tompickup23/megacaps
-
-## Collaboration
-
-Managed by **@tompickup23**, **@gregjrothwell**, and **Claude** (AI dev).
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for workflow, branch conventions, and coding standards.
-See [TASKS.md](TASKS.md) for the shared task board.
 
 ## Project Structure
 
 ```
 megacaps/
-├── index.html            # Shop homepage (product grid + JSON-LD structured data)
+├── index.html            # Shop homepage (product grid + JSON-LD)
 ├── cart.html             # Shopping cart (localStorage)
-├── about.html            # About & contact page
+├── about.html            # Brand story
+├── faq.html              # FAQ
+├── press.html            # Press kit
+├── returns.html          # Returns policy
+├── terms.html            # Terms of sale
+├── privacy.html          # Privacy policy
 ├── success.html          # Post-payment confirmation
+├── thanks.html           # Post-form thank you
 ├── 404.html              # Custom error page
-├── css/style.css         # Brand stylesheet (navy/red/gold palette, BEM, responsive)
-├── js/shop.js            # Cart logic, Stripe checkout scaffold
-├── images/               # Product photos (placeholders — to be replaced)
-│   └── favicon.svg       # Site favicon
-├── site.webmanifest      # Web app manifest
-├── robots.txt            # Search engine crawl rules
-├── sitemap.xml           # Page index for search engines
-├── CONTRIBUTING.md       # How we work together
-├── TASKS.md              # Shared task board
-├── LOGO-PROMPTS.md       # 50 AI logo design prompts
-├── README.md             # This file
-└── .github/workflows/    # GitHub Pages deploy
+├── css/style.css         # Design system (red/navy/gold, Archivo Black + Inter)
+├── js/products.js        # Product catalogue + Stripe Payment Link slots
+├── js/shop.js            # Grid render, cart, checkout logic
+├── images/               # Product photography, hero, OG image
+├── public/brand/         # Logo system (baked-path SVGs) + brand guide
+└── docs/                 # Internal docs (Stripe setup, suppliers, outreach)
 ```
 
-## Status
+## How the shop takes money
 
-MVP built — product grid, cart, Stripe checkout scaffold, about page, SEO, analytics. Waiting on product images and Stripe activation. See [TASKS.md](TASKS.md) for details.
+`js/products.js` holds one `stripeLink` slot per product. With a link set, the
+buy button goes straight to a secure Stripe Payment Link. With no link set, the
+cart falls back to a reserve-order flow (Formspree email, we reply with an
+invoice). No keys or secrets live in this repo. Setup walkthrough:
+[docs/STRIPE-SETUP.md](docs/STRIPE-SETUP.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for workflow and coding standards, and
+[TASKS.md](TASKS.md) for the shared task board.

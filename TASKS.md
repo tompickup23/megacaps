@@ -1,65 +1,34 @@
-# MEGA Caps — Task Board
+# MEGA Caps Task Board
 
-Shared task tracker for @tompickup23, @gregjrothwell, and Claude.
-Update this file as you pick up / complete work.
+Update this file as you pick up or complete work.
 
-## Status Key
+## Relaunch (2026-08-27)
 
-- [ ] To do
-- [x] Done
-- **WIP** = Work in progress (add your name)
+- [x] Full site redesign: new design system (red/navy/gold, Archivo Black + Inter), all pages
+- [x] Real product photography for all six caps (`images/products/`)
+- [x] New logo system with baked vector paths (`public/brand/`, see BRAND_GUIDE.md)
+- [x] Cinematic hero and OG image
+- [x] Product catalogue as single data file (`js/products.js`)
+- [x] Cart rebuilt: quantities, per-line totals, localStorage
+- [x] Checkout: Stripe Payment Link per product, reserve-by-email fallback
+- [x] Prices live on every product
+- [x] House style pass: no em-dashes, British English
 
----
+## Blocked on account owners (10 minutes each)
 
-## Phase 1 — Shop MVP
+- [ ] **Create the Stripe account** and paste Payment Links into `js/products.js`
+      (walkthrough: `docs/STRIPE-SETUP.md`)
+- [ ] **Create the Formspree form.** The form ID `mzylkbwd` in `index.html` and
+      `js/products.js` returns FORM_NOT_FOUND (verified 27 Aug 2026): email
+      capture has never worked. Create a form at formspree.io for
+      megacaps.co.uk and replace the ID in both files.
+- [ ] Register megacaps.co.uk on plausible.io so the analytics snippet goes live
 
-- [x] Landing page & GitHub Pages deploy
-- [x] Set up repo collaboration & project structure
-- [x] **Product grid with 4 placeholder products** (Greg)
-- [x] **Shopping cart with localStorage** (Greg)
-- [x] **About / Contact page** (Greg)
-- [x] **SEO meta tags & Open Graph** (Greg)
-- [x] **Social media links** (Greg)
-- [x] **Stripe Checkout integration (placeholder setup)** (Greg)
-- [x] **Polished styling** (Greg)
-- [x] **Technical SEO: robots.txt, sitemap.xml, JSON-LD structured data** (Claude)
-- [x] **404 error page for GitHub Pages** (Claude)
-- [x] **Analytics scaffold: Plausible snippet on all pages** (Claude)
-- [x] **Favicon + web app manifest** (Claude)
-- [x] **Email signup / notify list** (Claude)
-- [ ] Source product images for caps (Tom)
-- [ ] Add real product descriptions & pricing
-- [ ] Activate Stripe (add live keys & Price IDs)
-- [ ] Set up custom domain megacaps.co.uk
-- [ ] Activate analytics (register megacaps.co.uk on plausible.io)
-- [ ] Activate email capture (create Formspree form, update form ID in index.html)
+## Phase 2
 
-## Phase 2 — Growth
+- [ ] Combined multi-item checkout (Cloudflare Pages Function + Stripe Checkout
+      Session, replaces one-link-per-design)
+- [ ] Additional product lines (hoodies, t-shirts)
+- [ ] Fulfilment: pick a print-on-demand or stock supplier (see docs/SUPPLIERS.md)
 
-- [ ] Additional product lines (hoodies, t-shirts, etc.)
-- [ ] Netlify deploy previews for PRs (gives live URLs for each branch)
-
----
-
-## Current Status — 2026-02-08
-
-**PR #4 is open:** https://github.com/tompickup23/megacaps/pull/4
-- Greg's complete MVP: product grid, cart, checkout, about page, SEO, polished design
-- Supersedes PRs #1, #2, #3 (all closed)
-- Ready for Tom to review and merge
-
-**Claude's branch:** `claude/find-useful-prs-f0t5j`
-- Technical SEO infrastructure (robots.txt, sitemap.xml, JSON-LD structured data)
-- 404 error page for GitHub Pages
-- Plausible analytics snippet on all pages (needs domain activation to go live)
-- SVG favicon + web app manifest for browser tabs / mobile home screen
-- Based on Greg's `feature/polished-design-final` — merges cleanly after PR #4
-
-**After PR #4 + Claude's branch merge:**
-1. Tom adds product images (replace placeholders in index.html)
-2. Tom creates Stripe account → shares publishable key + Price IDs
-3. Greg activates Stripe (update js/shop.js with live keys)
-4. Tom registers megacaps.co.uk on plausible.io (analytics go live automatically)
-5. Set up custom domain DNS (megacaps.co.uk)
-
-*Last updated: 2026-02-08*
+*Last updated: 2026-08-27*

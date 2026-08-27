@@ -3,13 +3,13 @@
   "short_name": "MEGA",
   "icons": [
     {
-      "src": "images/favicon.svg",
+      "src": "public/brand/icon.svg",
       "type": "image/svg+xml",
       "sizes": "any"
     }
   ],
   "theme_color": "#0A1628",
-  "background_color": "#FFFFFF",
+  "background_color": "#F4EFE6",
   "display": "standalone",
   "start_url": "/"
 }

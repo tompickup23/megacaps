@@ -1,4 +1,4 @@
-# MEGA Caps POD Platform Outreach — Setup & Integration Guide
+# MEGA Caps POD Platform Outreach : setup & Integration Guide
 
 **Document Created:** 12 February 2026  
 **Purpose:** Zero-inventory POD setup, API integration, white-label branding  
@@ -9,20 +9,20 @@
 ## PRIORITY OUTREACH SEQUENCE
 
 ### TIER 1: Primary (This Week)
-- **Printful** — Quality + API + proven track record
+- **Printful** : quality + API + proven track record
 - Order samples, test embroidery quality
 
 ### TIER 2: Secondary (Week 2)
-- **Printify** — Cost optimization, partner vetting
+- **Printify** : cost optimization, partner vetting
 - Compare quality with Printful
 
 ### TIER 3: Optional (Week 2)
-- **Gelato** — EU/eco alternative (if applicable)
-- **AOP+** — UK-focused alternative (if applicable)
+- **Gelato** : eU/eco alternative (if applicable)
+- **AOP+** : uK-focused alternative (if applicable)
 
 ---
 
-## TEMPLATE 1: PRINTFUL ONBOARDING (No Email Needed — Self-Service)
+## TEMPLATE 1: PRINTFUL ONBOARDING (No Email Needed : self-Service)
 
 **Platform:** printful.com  
 **Setup Type:** Automated, no manual outreach needed  

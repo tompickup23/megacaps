@@ -1,4 +1,4 @@
-# MEGA Caps POD Model — Priority Action List
+# MEGA Caps POD Model : priority Action List
 
 **Model:** 100% Print-on-Demand, zero inventory, fully automated  
 **Created:** 12 February 2026  
@@ -8,7 +8,7 @@
 
 ## THE HANDS-OFF MODEL IN ONE SENTENCE
 
-**Create designs online, customers order directly from your store, POD platform ships directly to them, you keep the margin — zero inventory, zero fulfillment work.**
+**Create designs online, customers order directly from your store, POD platform ships directly to them, you keep the margin, zero inventory, zero fulfillment work.**
 
 ---
 
@@ -43,7 +43,7 @@
 
 ## WHAT'S IN THE RESEARCH DOCUMENTS
 
-### 1. **SUPPLIERS.md** (REVISED — POD Only)
+### 1. **SUPPLIERS.md** (REVISED : pOD Only)
 - Deep dive on 4 POD platforms (Printful, Printify, Gelato, AOP+)
 - Cap selection, embroidery quality, UK shipping, pricing
 - Comparison matrix
@@ -86,9 +86,9 @@
 ---
 
 ### Other Docs (Keep for Reference)
-- **PHASE-PLAN.md** (Old) — Skip, outdated (manufacturer-focused)
-- **OUTREACH.md** (Old) — Skip, outdated (manufacturer-focused)
-- **EXECUTIVE-SUMMARY.md** (Old) — Skip, outdated (manufacturer-focused)
+- **PHASE-PLAN.md** (Old) : skip, outdated (manufacturer-focused)
+- **OUTREACH.md** (Old) : skip, outdated (manufacturer-focused)
+- **EXECUTIVE-SUMMARY.md** (Old) : skip, outdated (manufacturer-focused)
 
 **Focus on:** SUPPLIERS.md (POD sections only), POD-OUTREACH.md, POD-STRATEGY.md
 
@@ -197,10 +197,10 @@ A: Marketing (getting customers), not fulfillment. POD handles all logistics. Yo
 
 ## FILE READING ORDER (PRIORITY)
 
-1. **This file (POD-PRIORITY.md)** — You are here
-2. **SUPPLIERS.md — Sections 1–2 (POD Platforms)** — 15 mins
-3. **POD-OUTREACH.md — Template 1 (Printful Setup)** — 20 mins
-4. **POD-STRATEGY.md — Phase 1 (Launch)** — 20 mins
+1. **This file (POD-PRIORITY.md)** : you are here
+2. **SUPPLIERS.md : sections 1–2 (POD Platforms)**, 15 mins
+3. **POD-OUTREACH.md : template 1 (Printful Setup)**, 20 mins
+4. **POD-STRATEGY.md : phase 1 (Launch)**, 20 mins
 5. **Execute:** Create Printful account, order samples (1 hour)
 
 **Total reading: ~55 minutes | Total setup: 2–3 hours | Total investment: £30–£100**

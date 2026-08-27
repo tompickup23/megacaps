@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <!-- MEGA — Apple Touch Icon 180x180 -->
+  <rect width="180" height="180" rx="36" fill="#0A1628"/>
+
+  <!-- Shield -->
+  <path d="M90 22 L148 50 L148 100 Q148 140 90 158 Q32 140 32 100 L32 50 Z" fill="none" stroke="#C8102E" stroke-width="4"/>
+
+  <!-- Cross subtle -->
+  <rect x="32" y="82" width="116" height="8" fill="#C8102E" opacity="0.3"/>
+  <rect x="86" y="45" width="8" height="95" fill="#C8102E" opacity="0.3"/>
+
+  <!-- M -->
+  <text x="90" y="115" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="72" font-weight="900" fill="#FFFFFF">M</text>
+</svg>

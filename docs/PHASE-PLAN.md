@@ -1,4 +1,4 @@
-# MEGA Caps — Three-Phase Growth Roadmap
+# MEGA Caps : three-Phase Growth Roadmap
 
 **Document Created:** 12 February 2026  
 **Status:** Ready to implement  
